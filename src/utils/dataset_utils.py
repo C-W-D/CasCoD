@@ -43,10 +43,6 @@ def get_custom_dataset(dataset_config, tokenizer, split: str):
     
 
 DATASET_PREPROC = {
-    "alpaca_dataset": partial(get_alpaca_dataset, max_words=224),
-    "grammar_dataset": get_grammar_dataset,
-    "samsum_dataset": get_samsum_dataset,
-    "custom_dataset": get_custom_dataset,
     "bbh_eval_dataset": partial(get_bbh_eval_dataset, max_words=150),
     "bbhtrain_eval_dataset": partial(get_bbh_eval_dataset, max_words=150),
     "bbh_dataset": partial(get_bbh_dataset, max_words=150),

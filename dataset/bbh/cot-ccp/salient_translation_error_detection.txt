@@ -1,0 +1,52 @@
+Question Description: Detect the type of error in an English translation of a German source sentence.
+You need to complete the Wrong Response which requires you give the most likely incorrect answer to the question and the rationale for the incorrect answer. The incorrect answer and rationale in the Wrong Response must be different from the correct answer and rationale in the Right Response.
+
+Q: The following translations from German to English contain a particular error. That error will be one of the following types: Named Entities: An entity (names, places, locations, etc.) is changed to a different entity. Numerical Values: Numerical values (ordinals or cardinals), dates, and/or units are changed. Modifiers or Adjectives: The modifiers and adjectives pertaining to a noun are changed. Negation or Antonyms: Introduce or remove a negation or change comparatives to their antonyms. Facts: Trivial factual errors not pertaining to the above classes are introduced in the translations. Dropped Content: A significant clause in the translation is removed. Please identify that error.  Source: Die Bezeichnung Leinwandgemälde ist in der Fachliteratur für textile Bildträger gebräuchlich.
+Translation: The term canvas painting is used in general literature for textile image carriers.
+The translation contains an error pertaining to
+Options:
+(A) Modifiers or Adjectives
+(B) Numerical Values
+(C) Negation or Antonyms
+(D) Named Entities
+(E) Dropped Content
+(F) Facts
+
+Right Response: We solve this question by first translating the source sentence to English and then by comparing our translation with the provided translation. According to Google Translate, the correct translation of the source sentence from German to English is "The term canvas painting is common in the specialist literature for textile image carriers." On the other hand, the provided translation is "The term canvas painting is used in general literature for textile image carriers." Note that the provided translation says "in general literature" instead of "in the specialist literature." Because the translation changed the meaning of the original source by using a more general term instead of a specific term, the translation contains an error pertaining to Negation or Antonyms. Therefore, the answer is (C).
+
+Wrong Response: We solve this question by first translating the source sentence to English and then by comparing our translation with the provided translation. According to Google Translate, the correct translation of the source sentence from German to English is "The term canvas painting is common in the specialist literature for textile image carriers." On the other hand, the provided translation is "The term canvas painting is used in general literature for textile image carriers." Note that the original translation says "general literature" instead of "specialist literature". Because the modifier pertaining to the noun is changed in the translation, the translation contains an error pertaining to Modifiers or Adjectives. Therefore, the answer is (A).
+
+Q: The following translations from German to English contain a particular error. That error will be one of the following types: Named Entities: An entity (names, places, locations, etc.) is changed to a different entity. Numerical Values: Numerical values (ordinals or cardinals), dates, and/or units are changed. Modifiers or Adjectives: The modifiers and adjectives pertaining to a noun are changed. Negation or Antonyms: Introduce or remove a negation or change comparatives to their antonyms. Facts: Trivial factual errors not pertaining to the above classes are introduced in the translations. Dropped Content: A significant clause in the translation is removed. Please identify that error.  Source: Makoc ist ein Dorf im Kosovo.
+Translation: Makoc is a city in Kosovo.
+The translation contains an error pertaining to
+Options:
+(A) Modifiers or Adjectives
+(B) Numerical Values
+(C) Negation or Antonyms
+(D) Named Entities
+(E) Dropped Content
+(F) Facts
+
+Right Response: We solve this question by first translating the source sentence to English and then by comparing our translation with the provided translation. According to Google Translate, the correct translation of the source sentence from German to English is "Makoc is a village in Kosovo." On the other hand, the provided translation is "Makoc is a city in Kosovo." Note that the original translation incorrectly refers to Makoc as a city, while the source sentence clearly states that it is a village. Because a trivial factual error is introduced in the translation, the error pertains to Facts. Therefore, the answer is (F).
+
+Wrong Response: We solve this question by first translating the source sentence to English and then by comparing our translation with the provided translation. According to Google Translate, the correct translation of the source sentence from German to English is "Makoc is a village in Kosovo." On the other hand, the provided translation is "Makoc is a city in Kosovo." Note that the word "Dorf" in the source sentence means "village" in English, not "city". Because the translation changed the entity type from a village to a city, the translation contains an error pertaining to Named Entities. Therefore, the answer is (D).
+
+Q: The following translations from German to English contain a particular error. That error will be one of the following types: Named Entities: An entity (names, places, locations, etc.) is changed to a different entity. Numerical Values: Numerical values (ordinals or cardinals), dates, and/or units are changed. Modifiers or Adjectives: The modifiers and adjectives pertaining to a noun are changed. Negation or Antonyms: Introduce or remove a negation or change comparatives to their antonyms. Facts: Trivial factual errors not pertaining to the above classes are introduced in the translations. Dropped Content: A significant clause in the translation is removed. Please identify that error.  Source: Auf dem Gebiet des deutschen Bundeslandes Hessen befindet sich eine Vielzahl von Schlössern und Burgen.
+Translation: On the territory of the German state of Hesse there are a large number of castles and rockets.
+The translation contains an error pertaining to
+Options:
+(A) Modifiers or Adjectives
+(B) Numerical Values
+(C) Negation or Antonyms
+(D) Named Entities
+(E) Dropped Content
+(F) Facts
+
+Right Response: We solve this question by first translating the source sentence to English and then by comparing our translation with the provided translation. According to Google Translate, the correct translation of the source sentence from German to English is "There are a large number of castles and palaces in the German state of Hesse." On the other hand, the provided translation is "On the territory of the German state of Hesse there are a large number of castles and rockets." Note that the word "rockets" is used instead of "palaces" in the original translation. Because a trivial factual error is introduced in the translation by using the word "rockets" instead of "palaces," the translation contains an error pertaining to Facts. Therefore, the answer is (F).
+
+Wrong Response: We solve this question by first translating the source sentence to English and then by comparing our translation with the provided translation. According to Google Translate, the correct translation of the source sentence from German to English is "There are a large number of castles and palaces in the German state of Hesse." On the other hand, the provided translation is "On the territory of the German state of Hesse there are a large number of castles and rockets." Note that the word "rockets" is used instead of "palaces" in the original translation. Because a different entity is used in the translation instead of the correct entity, the translation contains an error pertaining to Named Entities. Therefore, the answer is (D).
+
+
+Q: {QUESTION}
+Right Response: {RIGHT}
+Wrong Response: {WRONG}

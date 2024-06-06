@@ -1,0 +1,65 @@
+Question Description: Recommend movies similar to the given list of movies.
+You need to complete the Wrong Response which requires you give the most likely incorrect answer to the question and the rationale for the incorrect answer. The incorrect answer and rationale in the Wrong Response must be different from the correct answer and rationale in the Right Response.
+
+Q: Find a movie similar to Dances with Wolves, The Fugitive, The Shawshank Redemption, Braveheart:
+Options:
+(A) Hostage
+(B) Behind Enemy Lines
+(C) Get Shorty
+(D) Alice
+
+Right Response: - Dances with Wolves (adventure, drama, western; 1990)
+- The Fugitive (action, crime, drama; 1993)
+- The Shawshank Redemption (drama; 1994)
+- Braveheart (biography, drama, epic; 1995)
+These are all famous movies produced in the 1990s. Amongst all the options, the only movie similar to these ones seems to be Get Shorty (comedy, crime, thriller; 1995), as it is also a crime drama movie. Therefore, the answer is (C).
+
+Wrong Response: - Dances with Wolves (adventure, drama, western; 1990)
+- The Fugitive (action, crime, drama; 1993)
+- The Shawshank Redemption (drama; 1994)
+- Braveheart (biography, drama, epic; 1995)
+These are all famous movies produced in the 1990s. Amongst all the options, the only movie similar to these ones seems to be Hostage (action, crime, drama; 2005), as it also involves a protagonist facing dangerous situations and trying to survive. Therefore, the answer is (A).
+
+Q: Find a movie similar to The Mask, Aladdin, The Lion King, Pretty Woman:
+Options:
+(A) Batman
+(B) The Deadly Bees
+(C) Hot Girls Wanted
+(D) Mermaids
+
+Right Response: - The Mask (comedy, fantasy; 1994)
+- Aladdin (animation, adventure, comedy; 1992)
+- The Lion King (animation, adventure, drama; 1994)
+- Pretty Woman (comedy, romance; 1990)
+These are all popular movies from the 1990s. Amongst all the options, the only movie similar to these ones seems to be Batman (action, adventure; 1989), as it is also a popular movie from the same era and features a mix of comedy and fantasy elements. Therefore, the answer is (A).
+
+Wrong Response: - The Mask (comedy, fantasy; 1994)
+- Aladdin (animation, adventure, comedy; 1992)
+- The Lion King (animation, adventure, drama; 1994)
+- Pretty Woman (comedy, romance; 1990)
+These are all famous movies produced in the 1990s. Amongst all the options, the only movie similar to these ones seems to be Mermaids (comedy, drama, romance; 1990), as it is also a romantic comedy with a touch of fantasy. Therefore, the answer is (D).
+
+Q: Find a movie similar to Terminator 2 Judgment Day, The Fugitive, The Shawshank Redemption, Dead Man Walking:
+Options:
+(A) Walk
+(B) Don't Run
+(C) Shaun the Sheep Movie
+(D) Rocky IV
+(E) Braveheart
+
+Right Response: - Terminator 2 Judgment Day (action, science-fiction; 1991)
+- The Fugitive (action, crime, drama; 1993)
+- The Shawshank Redemption (drama; 1994)
+- Dead Man Walking (crime, drama; 1995)
+These are all famous movies produced in the 1990s. Amongst all the options, the only movie similar to these ones seems to be Braveheart (biography, drama, epic; 1995), as it is also a dramatic movie with intense storytelling. Therefore, the answer is (E).
+
+Wrong Response: - Terminator 2 Judgment Day (action, science-fiction; 1991)
+- The Fugitive (action, crime, drama; 1993)
+- The Shawshank Redemption (drama; 1994)
+- Dead Man Walking (crime, drama; 1995)
+These are all famous movies produced in the 1990s. Amongst all the options, the only movie similar to these ones seems to be Rocky IV (drama, sport; 1985), as it is also an action movie with a strong protagonist. Therefore, the answer is (D).
+
+
+Q: {QUESTION}
+Right Response: {RIGHT}
+Wrong Response: {WRONG}

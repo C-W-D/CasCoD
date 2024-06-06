@@ -1,0 +1,78 @@
+Question Description: Given a series of navigation instructions, determine whether one would end up back at the starting point.
+You need to complete the Wrong Response which requires you give the most likely incorrect answer to the question and the rationale for the incorrect answer. The incorrect answer and rationale in the Wrong Response must be different from the correct answer and rationale in the Right Response.
+
+Q: If you follow these instructions, do you return to the starting point? Take 8 steps. Take 1 step. Turn left. Turn left. Take 9 steps.
+Options:
+- Yes
+- No
+
+Right Response: We start at the origin (0, 0), facing the positive y-axis.
+(1) Take 8 steps: (0, 8), facing the positive y-axis.
+(2) Take 1 step: (0, 9), facing the positive y-axis.
+(3) Turn left: (0, 9), facing the positive x-axis.
+(4) Turn left: (0, 9), facing the negative x-axis.
+(5) Take 9 steps: (0, 0), facing the negative x-axis.
+Since (0, 0) is indeed (0, 0), we are back where we started. Therefore, the answer is Yes.
+
+Wrong Response: We start at the origin (0, 0), facing the positive y-axis.
+(1) Take 8 steps: (0, 8), facing the positive y-axis.
+(2) Take 1 step: (0, 9), facing the positive y-axis.
+(3) Turn left: (0, 9), facing the negative x-axis.
+(4) Turn left: (0, 9), facing the positive x-axis.
+(5) Take 9 steps: (9, 9), facing the positive x-axis.
+Since (9, 9) is not (0, 0), we are not where we started. Therefore, the answer is No.
+
+Q: If you follow these instructions, do you return to the starting point? Take 2 steps. Take 10 steps. Turn around. Take 6 steps. Turn left. Turn right. Take 6 steps.
+Options:
+- Yes
+- No
+
+Right Response: We start at the origin (0, 0), facing the positive y-axis.
+(1) Take 2 steps: (0, 2), facing the positive y-axis.
+(2) Take 10 steps: (0, 12), facing the positive y-axis.
+(3) Turn around: (0, 12), facing the negative y-axis.
+(4) Take 6 steps: (0, 6), facing the negative y-axis.
+(5) Turn left: (0, 6), facing the negative x-axis.
+(6) Turn right: (0, 6), facing the positive x-axis.
+(7) Take 6 steps: (0, 12), facing the positive x-axis.
+Since (0, 12) is (0, 0), we are indeed where we started. Therefore, the answer is Yes.
+
+Wrong Response: We start at the origin (0, 0), facing the positive y-axis.
+(1) Take 2 steps: (0, 2), facing the positive y-axis.
+(2) Take 10 steps: (0, 12), facing the positive y-axis.
+(3) Turn around: (0, 12), facing the negative y-axis.
+(4) Take 6 steps: (0, 6), facing the negative y-axis.
+(5) Turn left: (0, 6), facing the negative x-axis.
+(6) Turn right: (0, 6), facing the positive x-axis.
+(7) Take 6 steps: (0, 12), facing the positive x-axis.
+Since (0, 12) is not (0, 0), we are not where we started. Therefore, the answer is No.
+
+Q: If you follow these instructions, do you return to the starting point? Take 2 steps. Take 10 steps. Turn around. Take 6 steps. Turn left. Turn right. Take 6 steps.
+Options:
+- Yes
+- No
+
+Right Response: We start at the origin (0, 0), facing the positive y-axis.
+(1) Take 2 steps: (0, 2), facing the positive y-axis.
+(2) Take 10 steps: (0, 12), facing the positive y-axis.
+(3) Turn around: (0, 12), facing the negative y-axis.
+(4) Take 6 steps: (0, 6), facing the negative y-axis.
+(5) Turn left: (0, 6), facing the negative x-axis.
+(6) Turn right: (0, 6), facing the positive x-axis.
+(7) Take 6 steps: (0, 12), facing the positive x-axis.
+Since (0, 12) is (0, 0), we are indeed where we started. Therefore, the answer is Yes.
+
+Wrong Response: We start at the origin (0, 0), facing the positive y-axis.
+(1) Take 2 steps: (0, 2), facing the positive y-axis.
+(2) Take 10 steps: (0, 12), facing the positive y-axis.
+(3) Turn around: (0, 12), facing the negative y-axis.
+(4) Take 6 steps: (0, 6), facing the negative y-axis.
+(5) Turn left: (0, 6), facing the negative x-axis.
+(6) Turn right: (0, 6), facing the positive x-axis.
+(7) Take 6 steps: (0, 12), facing the positive x-axis.
+Since (0, 12) is not (0, 0), we are not where we started. Therefore, the answer is No.
+
+
+Q: {QUESTION}
+Right Response: {RIGHT}
+Wrong Response: {WRONG}

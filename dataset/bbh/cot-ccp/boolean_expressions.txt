@@ -1,0 +1,50 @@
+Question Description: Evaluate the result of a random Boolean expression.
+You need to complete the Wrong Response which requires you give the most likely incorrect answer to the question and the rationale for the incorrect answer. The incorrect answer and rationale in the Wrong Response must be different from the correct answer and rationale in the Right Response.
+
+Q: False or not False and ( False ) is
+
+Right Response: Remember that (i) expressions inside brackets are always evaluated first and that (ii) the order of operations from highest priority to lowest priority is "not", "and", "or", respectively.
+We first simplify this expression "Z" as follows: "Z = False or not False and ( False ) = A or B" where "A = False" and "B = not False and ( False )".
+Let's evaluate B: B = not False and ( False ) = not ( False ) and ( False ) = True and ( False ) = False.
+Plugging in A and B, we get: Z = A or B = False or False = False. Therefore, the answer is False.
+
+Wrong Response: Remember that (i) expressions inside brackets are always evaluated first and that (ii) the order of operations from highest priority to lowest priority is "not", "and", "or", respectively.
+We first simplify this expression "Z" as follows: "Z = False or not False and ( False ) = A or B" where "A = False or not False" and "B = ( False )".
+Let's evaluate A: A = False or not False = False or True = True.
+Let's evaluate B: B = ( False ) = False.
+Plugging in A and B, we get: Z = A or B = True or False = True. Therefore, the answer is True.
+
+Q: False or not True or True and False is
+
+Right Response: Remember that (i) expressions inside brackets are always evaluated first and that (ii) the order of operations from highest priority to lowest priority is "not", "and", "or", respectively. 
+
+We first simplify this expression "Z" as follows: "Z = False or not True or True and False = A or B or C" where "A = False or not True", "B = True and False", and "C = False".
+
+Let's evaluate A: A = False or not True = False or False = False.
+Let's evaluate B: B = True and False = False.
+Plugging in A, B, and C, we get: Z = A or B or C = False or False or False = False. Therefore, the answer is False.
+
+Wrong Response: Remember that (i) expressions inside brackets are always evaluated first and that (ii) the order of operations from highest priority to lowest priority is "not", "and", "or", respectively.
+We first simplify this expression "Z" as follows: "Z = False or not True or True and False = A or B or C" where "A = False or not True", "B = True and False", and "C = True".
+Let's evaluate A: A = False or not True = False or not (True) = False or False = False.
+Let's evaluate B: B = True and False = False.
+Plugging in A, B, and C, we get: Z = A or B or C = False or False or True = True. Therefore, the answer is True.
+
+Q: False or ( False ) and not False is
+
+Right Response: Remember that (i) expressions inside brackets are always evaluated first and that (ii) the order of operations from highest priority to lowest priority is "not", "and", "or", respectively.
+We first simplify this expression "Z" as follows: "Z = False or ( False ) and not False = A or B and C" where "A = False or ( False )", "B = not False", and "C = False".
+Let's evaluate A: A = False or ( False ) = False.
+Let's evaluate B: B = not False = not (False) = True.
+Plugging in A, B, and C, we get: Z = A or B and C = False or True and False = False or False = False. Therefore, the answer is False.
+
+Wrong Response: Remember that (i) expressions inside brackets are always evaluated first and that (ii) the order of operations from highest priority to lowest priority is "not", "and", "or", respectively.
+We first simplify this expression "Z" as follows: "Z = False or ( False ) and not False = A or B" where "A = False or ( False )" and "B = not False".
+Let's evaluate A: A = False or ( False ) = False.
+Let's evaluate B: B = not False = not ( False ) = True.
+Plugging in A and B, we get: Z = A or B = False or True = True. Therefore, the answer is True.
+
+
+Q: {QUESTION}
+Right Response: {RIGHT}
+Wrong Response: {WRONG}

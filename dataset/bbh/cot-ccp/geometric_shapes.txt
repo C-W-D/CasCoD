@@ -1,0 +1,139 @@
+Question Description: Name geometric shapes from their SVG paths.
+You need to complete the Wrong Response which requires you give the most likely incorrect answer to the question and the rationale for the incorrect answer. The incorrect answer and rationale in the Wrong Response must be different from the correct answer and rationale in the Right Response.
+
+Q: This SVG path element <path d="M 56.65,48.82 L 49.88,51.20 L 41.54,46.34 M 41.54,46.34 L 38.84,38.12 L 40.98,27.02 L 53.70,25.47 L 61.07,31.46 M 61.07,31.46 L 61.50,43.21 M 61.50,43.21 L 56.65,48.82"/> draws a
+Options:
+(A) circle
+(B) heptagon
+(C) hexagon
+(D) kite
+(E) line
+(F) octagon
+(G) pentagon
+(H) rectangle
+(I) sector
+(J) triangle
+
+Right Response: This SVG path element contains "M" and "L" commands. M takes two parameters (x,y) and moves the current point to the coordinates (x,y). L takes two parameters (x,y) and draws a line from the previous coordinate to the new coordinate (x,y).
+
+This path can be decomposed into 8 separate commands.
+(1) M 56.65,48.82: Move the current point to 56.65,48.82.
+(2) L 49.88,51.20: Create a line from 56.65,48.82 to 49.88,51.20.
+(3) L 41.54,46.34: Create a line from 49.88,51.20 to 41.54,46.34.
+(4) M 41.54,46.34: Move the current point to 41.54,46.34.
+(5) L 38.84,38.12: Create a line from 41.54,46.34 to 38.84,38.12.
+(6) L 40.98,27.02: Create a line from 38.84,38.12 to 40.98,27.02.
+(7) L 53.70,25.47: Create a line from 40.98,27.02 to 53.70,25.47.
+(8) M 61.07,31.46: Move the current point to 61.07,31.46.
+(9) L 61.50,43.21: Create a line from 61.07,31.46 to 61.50,43.21.
+(10) L 56.65,48.82: Create a line from 61.50,43.21 to 56.65,48.82.
+
+This SVG path starts at point 56.65,48.82, creates seven consecutive and touching lines, and then returns back to its starting point, thereby creating an eight-sided shape. It does not have any curves or arches. "octagon" is the only eight-sided object on the list. Therefore, the answer is (F).
+
+Wrong Response: This SVG path element contains "M" and "L" commands. M takes two parameters (x,y) and moves the current point to the coordinates (x,y). L takes two parameters (x,y) and draws a line from the previous coordinate to the new coordinate (x,y).
+This path can be decomposed into 8 separate commands.
+(1) M 56.65,48.82: Move the current point to 56.65,48.82.
+(2) L 49.88,51.20: Create a line from 56.65,48.82 to 49.88,51.20.
+(3) L 41.54,46.34: Create a line from 49.88,51.20 to 41.54,46.34.
+(4) M 41.54,46.34: Move the current point to 41.54,46.34.
+(5) L 38.84,38.12: Create a line from 41.54,46.34 to 38.84,38.12.
+(6) L 40.98,27.02: Create a line from 38.84,38.12 to 40.98,27.02.
+(7) L 53.70,25.47: Create a line from 40.98,27.02 to 53.70,25.47.
+(8) L 61.07,31.46: Create a line from 53.70,25.47 to 61.07,31.46.
+(9) M 61.07,31.46: Move the current point to 61.07,31.46.
+(10) L 61.50,43.21: Create a line from 61.07,31.46 to 61.50,43.21.
+(11) M 61.50,43.21: Move the current point to 61.50,43.21.
+(12) L 56.65,48.82: Create a line from 61.50,43.21 to 56.65,48.82.
+This SVG path starts at point 56.65,48.82, creates multiple consecutive lines, and then returns back to its starting point. It does not form a closed shape. Therefore, the answer is (E) line.
+
+Q: This SVG path element <path d="M 77.37,27.19 L 75.57,16.98 L 55.39,21.31 L 44.39,14.63 M 44.39,14.63 L 57.18,30.28 M 57.18,30.28 L 77.37,27.19"/> draws a
+Options:
+(A) circle
+(B) heptagon
+(C) hexagon
+(D) kite
+(E) line
+(F) octagon
+(G) pentagon
+(H) rectangle
+(I) sector
+(J) triangle
+
+Right Response: This SVG path element contains "M" and "L" commands. M takes two parameters (x,y) and moves the current point to the coordinates (x,y). L takes two parameters (x,y) and draws a line from the previous coordinate to the new coordinate (x,y).
+
+This path can be decomposed into 7 separate commands.
+(1) M 77.37,27.19: Move the current point to 77.37,27.19.
+(2) L 75.57,16.98: Create a line from 77.37,27.19 to 75.57,16.98.
+(3) L 55.39,21.31: Create a line from 75.57,16.98 to 55.39,21.31.
+(4) L 44.39,14.63: Create a line from 55.39,21.31 to 44.39,14.63.
+(5) M 44.39,14.63: Move the current point to 44.39,14.63.
+(6) L 57.18,30.28: Create a line from 44.39,14.63 to 57.18,30.28.
+(7) M 57.18,30.28: Move the current point to 57.18,30.28.
+(8) L 77.37,27.19: Create a line from 57.18,30.28 to 77.37,27.19.
+
+This SVG path starts at point 77.37,27.19, creates four consecutive and touching lines, moves to a new point 44.39,14.63, creates another line, and then moves to a new point 57.18,30.28 and creates the final line. It does not have any curves or arches. This shape has five sides, so it is a "pentagon". Therefore, the answer is (G).
+
+Wrong Response: This SVG path element contains "M" and "L" commands. M takes two parameters (x,y) and moves the current point to the coordinates (x,y). L takes two parameters (x,y) and draws a line from the previous coordinate to the new coordinate (x,y).
+
+This path can be decomposed into 7 separate commands.
+(1) M 77.37,27.19: Move the current point to 77.37,27.19.
+(2) L 75.57,16.98: Create a line from 77.37,27.19 to 75.57,16.98.
+(3) L 55.39,21.31: Create a line from 75.57,16.98 to 55.39,21.31.
+(4) L 44.39,14.63: Create a line from 55.39,21.31 to 44.39,14.63.
+(5) M 44.39,14.63: Move the current point to 44.39,14.63.
+(6) L 57.18,30.28: Create a line from 44.39,14.63 to 57.18,30.28.
+(7) L 77.37,27.19: Create a line from 57.18,30.28 to 77.37,27.19.
+
+This SVG path starts at point 77.37,27.19, creates six consecutive and touching lines, and then returns back to its starting point, thereby creating a six-sided shape. It does not have any curves or arches. "hexagon" is the only six-sided polygon on the list. Therefore, the answer is (C).
+
+Q: This SVG path element <path d="M 42.84,45.37 L 48.55,45.35 M 48.55,45.35 L 49.27,51.61 L 55.53,50.89 L 56.80,56.46 M 56.80,56.46 L 51.67,61.48 M 51.67,61.48 L 42.62,59.98 L 39.66,50.81 L 42.84,45.37"/> draws a
+Options:
+(A) circle
+(B) heptagon
+(C) hexagon
+(D) kite
+(E) line
+(F) octagon
+(G) pentagon
+(H) rectangle
+(I) sector
+(J) triangle
+
+Right Response: This SVG path element contains "M" and "L" commands. M takes two parameters (x,y) and moves the current point to the coordinates (x,y). L takes two parameters (x,y) and draws a line from the previous coordinate to the new coordinate (x,y).
+
+This path can be decomposed into 8 separate commands.
+(1) M 42.84,45.37: Move the current point to 42.84,45.37.
+(2) L 48.55,45.35: Create a line from 42.84,45.37 to 48.55,45.35.
+(3) M 48.55,45.35: Move the current point to 48.55,45.35.
+(4) L 49.27,51.61: Create a line from 48.55,45.35 to 49.27,51.61.
+(5) L 55.53,50.89: Create a line from 49.27,51.61 to 55.53,50.89.
+(6) L 56.80,56.46: Create a line from 55.53,50.89 to 56.80,56.46.
+(7) M 56.80,56.46: Move the current point to 56.80,56.46.
+(8) L 51.67,61.48: Create a line from 56.80,56.46 to 51.67,61.48.
+(9) L 51.67,61.48: Create a line from 51.67,61.48 to 42.62,59.98.
+(10) L 39.66,50.81: Create a line from 42.62,59.98 to 39.66,50.81.
+(11) L 42.84,45.37: Create a line from 39.66,50.81 to 42.84,45.37.
+
+This SVG path starts at point 42.84,45.37, creates seven consecutive and touching lines, and then returns back to its starting point, thereby creating an eight-sided shape. It does not have any curves or arches. "octagon" is the only eight-sided polygon on the list. Therefore, the answer is (F).
+
+Wrong Response: This SVG path element contains "M" and "L" commands. M takes two parameters (x,y) and moves the current point to the coordinates (x,y). L takes two parameters (x,y) and draws a line from the previous coordinate to the new coordinate (x,y).
+
+This path can be decomposed into 8 separate commands.
+(1) M 42.84,45.37: Move the current point to 42.84,45.37.
+(2) L 48.55,45.35: Create a line from 42.84,45.37 to 48.55,45.35.
+(3) M 48.55,45.35: Move the current point to 48.55,45.35.
+(4) L 49.27,51.61: Create a line from 48.55,45.35 to 49.27,51.61.
+(5) L 55.53,50.89: Create a line from 49.27,51.61 to 55.53,50.89.
+(6) L 56.80,56.46: Create a line from 55.53,50.89 to 56.80,56.46.
+(7) M 56.80,56.46: Move the current point to 56.80,56.46.
+(8) L 51.67,61.48: Create a line from 56.80,56.46 to 51.67,61.48.
+(9) L 42.62,59.98: Create a line from 51.67,61.48 to 42.62,59.98.
+(10) L 39.66,50.81: Create a line from 42.62,59.98 to 39.66,50.81.
+(11) L 42.84,45.37: Create a line from 39.66,50.81 to 42.84,45.37.
+
+This SVG path starts at point 42.84,45.37, creates 10 consecutive and touching lines, and then returns back to its starting point, thereby creating a 10-sided shape. It does not have any curves or arches. "decagon" is the only 10-sided polygon on the list. Therefore, the answer is (K).
+
+
+Q: {QUESTION}
+Right Response: {RIGHT}
+Wrong Response: {WRONG}

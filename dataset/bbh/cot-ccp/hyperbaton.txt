@@ -1,0 +1,46 @@
+Question Description: Order adjectives correctly in English sentences.
+You need to complete the Wrong Response which requires you give the most likely incorrect answer to the question and the rationale for the incorrect answer. The incorrect answer and rationale in the Wrong Response must be different from the correct answer and rationale in the Right Response.
+
+Q: Which sentence has the correct adjective order:
+Options:
+(A) triangular new Vietnamese steel tiny awful pink match
+(B) awful tiny new triangular pink Vietnamese steel match
+
+Right Response: When there is more than one adjective before a noun, the adjectives need to respect the following order before a noun: "[1. opinion] [2. size] [3. age] [4. shape] [5. color] [6. origin] [7. material] [8. purpose] noun".
+Option (A): "triangular new Vietnamese steel tiny awful pink match". (1) "triangular" falls into the shape category. (2) "new" falls into the age category. (3) "Vietnamese" falls into the origin category. (4) "steel" falls into the material category. (5) "tiny" falls into the size category. (6) "awful" falls into the opinion category. (7) "pink" falls into the color category. Option (A) has the following adjective order: [4. shape] [3. age] [6. origin] [7. material] [2. size] [1. opinion] [5. color] (or, in numeric terms, 4 3 6 7 2 1 5). Because 4 < 3 < 6 < 7 < 2 < 1 < 5 is correct, (A) has the correct ordering.
+Option (B): "awful tiny new triangular pink Vietnamese steel match". Option (B) has the following adjective order: [1. opinion] [2. size] [3. age] [4. shape] [5. color] [6. origin] [7. material] (or, in numeric terms, 1 2 3 4 5 6 7). Because 1 < 2 < 3 < 4 < 5 < 6 < 7 is correct, (B) has the correct ordering. Therefore, the answer is (B).
+
+Wrong Response: When there is more than one adjective before a noun, the adjectives need to respect the following order before a noun: "[1. opinion] [2. size] [3. age] [4. shape] [5. color] [6. origin] [7. material] [8. purpose] noun".
+Option (A): "triangular new Vietnamese steel tiny awful pink match". (1) "triangular" falls into the shape category. (2) "new" falls into the age category. (3) "Vietnamese" falls into the origin category. (4) "steel" falls into the material category. (5) "tiny" falls into the size category. (6) "awful" falls into the opinion category. (7) "pink" falls into the color category. Option (A) has the following adjective order: [4. shape] [3. age] [6. origin] [7. material] [2. size] [1. opinion] [5. color] (or, in numeric terms, 4 3 6 7 2 1 5). Because 4 < 3 < 6 < 7 < 2 < 1 < 5 is correct, (A) has the correct ordering.
+Option (B): "awful tiny new triangular pink Vietnamese steel match". Option (B) has the following adjective order: [1. opinion] [2. size] [3. age] [4. shape] [5. color] [6. origin] [7. material] (or, in numeric terms, 1 2 3 4 5 6 7). Because 1 < 2 < 3 < 4 < 5 < 6 < 7 is not correct, (B) does not have the correct ordering. Therefore, the answer is (A).
+
+Q: Which sentence has the correct adjective order:
+Options:
+(A) fiberglass large tan car
+(B) large tan fiberglass car
+
+Right Response: When there is more than one adjective before a noun, the adjectives need to respect the following order before a noun: "[1. opinion] [2. size] [3. age] [4. shape] [5. color] [6. origin] [7. material] [8. purpose] noun".
+Option (A): "fiberglass large tan car". (1) "fiberglass" falls into the material category. (2) "large" falls into the size category. (3) "tan" falls into the color category. Option (A) has the following adjective order: [7. material] [2. size] [5. color] (or, in numeric terms, 7 2 5). Because 7 < 2 < 5 is not correct, (A) does not have the correct ordering.
+Option (B): "large tan fiberglass car". Option (B) has the following adjective order: [2. size] [5. color] [7. material] (or, in numeric terms, 2 5 7). Because 2 < 5 < 7 is correct, (B) has the correct ordering. Therefore, the answer is (B).
+
+Wrong Response: When there is more than one adjective before a noun, the adjectives need to respect the following order before a noun: "[1. opinion] [2. size] [3. age] [4. shape] [5. color] [6. origin] [7. material] [8. purpose] noun".
+Option (A): "fiberglass large tan car". (1) "fiberglass" falls into the material category. (2) "large" falls into the size category. (3) "tan" falls into the color category. Option (A) has the following adjective order: [7. material] [2. size] [5. color] (or, in numeric terms, 7 2 5). Because 7 < 2 < 5 is correct, (A) has the correct ordering.
+Option (B): "large tan fiberglass car". Option (B) has the following adjective order: [2. size] [5. color] [7. material] (or, in numeric terms, 2 5 7). Because 2 < 5 < 7 is not correct, (B) does not have the correct ordering. Therefore, the answer is (A).
+
+Q: Which sentence has the correct adjective order:
+Options:
+(A) green new chair
+(B) new green chair
+
+Right Response: When there is more than one adjective before a noun, the adjectives need to respect the following order before a noun: "[1. opinion] [2. size] [3. age] [4. shape] [5. color] [6. origin] [7. material] [8. purpose] noun".
+Option (A): "green new chair". (1) "green" falls into the color category. (2) "new" falls into the age category. Option (A) has the following adjective order: [5. color] [3. age] (or, in numeric terms, 5 3). Because 5 < 3 is not correct, (A) does not have the correct ordering.
+Option (B): "new green chair". Option (B) has the following adjective order: [3. age] [5. color] (or, in numeric terms, 3 5). Because 3 < 5 is correct, (B) has the correct ordering. Therefore, the answer is (B).
+
+Wrong Response: When there is more than one adjective before a noun, the adjectives need to respect the following order before a noun: "[1. opinion] [2. size] [3. age] [4. shape] [5. color] [6. origin] [7. material] [8. purpose] noun".
+Option (A): "green new chair". (1) "green" falls into the color category. (2) "new" falls into the age category. Option (A) has the following adjective order: [5. color] [3. age] (or, in numeric terms, 5 3). Because 5 < 3 is correct, (A) has the correct ordering.
+Option (B): "new green chair". Option (B) has the following adjective order: [3. age] [5. color] (or, in numeric terms, 3 5). Because 3 < 5 is not correct, (B) does not have the correct ordering. Therefore, the answer is (A).
+
+
+Q: {QUESTION}
+Right Response: {RIGHT}
+Wrong Response: {WRONG}

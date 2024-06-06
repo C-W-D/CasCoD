@@ -1,0 +1,74 @@
+Question Description: Distinguish deductively valid arguments from formal fallacies.
+You need to complete the Wrong Response which requires you give the most likely incorrect answer to the question and the rationale for the incorrect answer. The incorrect answer and rationale in the Wrong Response must be different from the correct answer and rationale in the Right Response.
+
+Q: "Is Titanium oxide an ingredient of my washing power? Which chemicals does my perfume contain? It is really difficult to keep track of all chemicals one is regularly exposed to. The following argument seeks to clarify some such relations: First premise: No ingredient of Lip Liner (Peach) is an ingredient of THE LIPSTICK 14 or an ingredient of Eye Design Palette. We may conclude: Whatever is none of this: an ingredient of THE LIPSTICK 14 or ingredient of Eye Design Palette, is an ingredient of Lip Liner (Peach)."
+Is the argument, given the explicitly stated premises, deductively valid or invalid?
+Options:
+- valid 
+- invalid
+
+Right Response: (1) No ingredient of Lip Liner (Peach) is an ingredient of THE LIPSTICK 14 or an ingredient of Eye Design Palette: If X = ingredient(Lip Liner (Peach)), then X = NOT (ingredient(THE LIPSTICK 14) OR ingredient(Eye Design Palette)).
+Hypothesis: Does it follow that whatever is none of this: an ingredient of THE LIPSTICK 14 or ingredient of Eye Design Palette, is an ingredient of Lip Liner (Peach): If X = NOT (ingredient(THE LIPSTICK 14) OR ingredient(Eye Design Palette)), then X = ingredient(Lip Liner (Peach))?
+Let’s see whether the Hypothesis can be deduced from the argument (1) by logical reasoning?
+By (1), we have if X = ingredient(Lip Liner (Peach)), then X = NOT (ingredient(THE LIPSTICK 14) OR ingredient(Eye Design Palette)).
+However, we cannot deduce the Hypothesis from this premise. Therefore, the answer is invalid.
+
+Wrong Response: (1) No ingredient of Lip Liner (Peach) is an ingredient of THE LIPSTICK 14 or an ingredient of Eye Design Palette: If X = ingredient(Lip Liner (Peach)), then X = NOT (ingredient(THE LIPSTICK 14) OR ingredient(Eye Design Palette)).
+Hypothesis: Does it follow that whatever is none of this: an ingredient of THE LIPSTICK 14 or ingredient of Eye Design Palette, is an ingredient of Lip Liner (Peach): If X = NOT (ingredient(THE LIPSTICK 14) OR ingredient(Eye Design Palette)), then X = ingredient(Lip Liner (Peach))?
+Let’s see whether the Hypothesis can be deduced from the argument (1) by logical reasoning?
+By (1), we have if X = ingredient(Lip Liner (Peach)), then X = NOT (ingredient(THE LIPSTICK 14) OR ingredient(Eye Design Palette)).
+By the contrapositive rule in first-order logic, we then have: if X = NOT (ingredient(THE LIPSTICK 14) OR ingredient(Eye Design Palette)), then X = ingredient(Lip Liner (Peach)).
+So, it is true that whatever is none of this: an ingredient of THE LIPSTICK 14 or ingredient of Eye Design Palette, is an ingredient of Lip Liner (Peach). Therefore, the answer is valid.
+
+Q: "Is Fred a fan of Liverpool? Are supporters of Real Madrid devotees of PSG? In European football, it is sometimes difficult to keep track of the mutual admiration and dislike. The following argument seeks to clarify some such relations: First premise: Every opponent to AS Roma is a backer of Hertha BSC Berlin or a fan of AC Sparta Praha or not a fan of FCSB. Second premise: No fan of FCSB is an expert of FK Sūduva. Third premise: Every fan of AC Sparta Praha is an expert of FK Sūduva. Fourth premise: Being an expert of FK Sūduva is necessary for being a backer of Hertha BSC Berlin. Hence, being an expert of FK Sūduva is necessary for being an opponent to AS Roma."
+Is the argument, given the explicitly stated premises, deductively valid or invalid?
+Options:
+- valid 
+- invalid
+
+Right Response: (1) Every opponent to AS Roma is a backer of Hertha BSC Berlin or a fan of AC Sparta Praha or not a fan of FCSB: If X = opponent(AS Roma), then X = backer(Hertha BSC Berlin) OR X = fan(AC Sparta Praha) OR X = NOT (fan(FCSB)).
+(2): No fan of FCSB is an expert of FK Sūduva: If X = fan(FCSB), then X = NOT (expert(FK Sūduva)).
+(3): Every fan of AC Sparta Praha is an expert of FK Sūduva: If X = fan(AC Sparta Praha), then X = expert(FK Sūduva).
+(4): Being an expert of FK Sūduva is necessary for being a backer of Hertha BSC Berlin: If X = expert(FK Sūduva), then X = backer(Hertha BSC Berlin).
+Hypothesis: Does it follow that being an expert of FK Sūduva is necessary for being an opponent to AS Roma: If X = expert(FK Sūduva), then X = opponent(AS Roma)?
+Let’s see whether the Hypothesis can be deduced from the arguments (1), (2), (3), and (4) by logical reasoning?
+By (3), we have if X = fan(AC Sparta Praha), then X = expert(FK Sūduva).
+By (4), we have if X = expert(FK Sūduva), then X = backer(Hertha BSC Berlin).
+However, there is no direct connection between being a backer of Hertha BSC Berlin and being an opponent to AS Roma in the given premises.
+Therefore, the answer is invalid.
+
+Wrong Response: (1) Every opponent to AS Roma is a backer of Hertha BSC Berlin or a fan of AC Sparta Praha or not a fan of FCSB.
+(2) No fan of FCSB is an expert of FK Sūduva.
+(3) Every fan of AC Sparta Praha is an expert of FK Sūduva.
+(4) Being an expert of FK Sūduva is necessary for being a backer of Hertha BSC Berlin.
+Hypothesis: Does it follow that being an expert of FK Sūduva is necessary for being an opponent to AS Roma?
+Let’s see whether the Hypothesis can be deduced from the arguments (1), (2), (3), and (4) by logical reasoning.
+By (1), we have if X = opponent(AS Roma), then X = backer(Hertha BSC Berlin) OR X = fan(AC Sparta Praha) OR X = NOT (fan(FCSB)).
+By (2), we have if X = fan(FCSB), then X ≠ expert(FK Sūduva).
+By (3), we have if X = fan(AC Sparta Praha), then X = expert(FK Sūduva).
+By (4), we have if X = expert(FK Sūduva), then X = backer(Hertha BSC Berlin).
+Combining these statements, we can conclude that if X = opponent(AS Roma), then X = expert(FK Sūduva).
+Therefore, the answer is valid.
+
+Q: "Here comes a perfectly valid argument: First, every stepbrother of Joan is a schoolmate of Reyes. Hence, every schoolmate of Reyes is a stepbrother of Joan."
+Is the argument, given the explicitly stated premises, deductively valid or invalid?
+Options:
+- valid 
+- invalid
+
+Right Response: (1) Every stepbrother of Joan is a schoolmate of Reyes: If X = stepbrother(Joan), then X = schoolmate(Reyes).
+Hypothesis: Does it follow that every schoolmate of Reyes is a stepbrother of Joan: If X = schoolmate(Reyes), then X = stepbrother(Joan)?
+Let’s see whether the Hypothesis can be deduced from the argument (1) by logical reasoning?
+By (1), we have if X = stepbrother(Joan), then X = schoolmate(Reyes). However, this does not necessarily mean that if X = schoolmate(Reyes), then X = stepbrother(Joan). There could be other schoolmates of Reyes who are not stepbrothers of Joan. Therefore, the answer is invalid.
+
+Wrong Response: (1) Every stepbrother of Joan is a schoolmate of Reyes: If X = stepbrother(Joan), then X = schoolmate(Reyes).
+Hypothesis: Does it follow that every schoolmate of Reyes is a stepbrother of Joan: If X = schoolmate(Reyes), then X = stepbrother(Joan)?
+Let’s see whether the Hypothesis can be deduced from the argument (1) by logical reasoning?
+By (1), we have if X = stepbrother(Joan), then X = schoolmate(Reyes).
+By the transitive relation rule in first-order logic, we then have: if X = schoolmate(Reyes), then X = stepbrother(Joan).
+So, it is true that every schoolmate of Reyes is a stepbrother of Joan. Therefore, the answer is valid.
+
+
+Q: {QUESTION}
+Right Response: {RIGHT}
+Wrong Response: {WRONG}

@@ -1,0 +1,95 @@
+Question Description: A logical deduction task which requires deducing the order of a sequence of objects.
+You need to complete the Wrong Response which requires you give the most likely incorrect answer to the question and the rationale for the incorrect answer. The incorrect answer and rationale in the Wrong Response must be different from the correct answer and rationale in the Right Response.
+
+Q: The following paragraphs each describe a set of seven objects arranged in a fixed order. The statements are logically consistent within each paragraph. A fruit stand sells seven fruits: plums, kiwis, pears, mangoes, apples, oranges, and loquats. The pears are less expensive than the oranges. The mangoes are less expensive than the kiwis. The plums are the second-most expensive. The loquats are more expensive than the apples. The kiwis are less expensive than the apples. The loquats are the fourth-most expensive.
+Options:
+(A) The plums are the third-most expensive
+(B) The kiwis are the third-most expensive
+(C) The pears are the third-most expensive
+(D) The mangoes are the third-most expensive
+(E) The apples are the third-most expensive
+(F) The oranges are the third-most expensive
+(G) The loquats are the third-most expensive
+
+Right Response: (1) The pears are less expensive than the oranges: "(expensive) ? pears ? oranges ? (cheap)".
+(2) The mangoes are less expensive than the kiwis: "(expensive) ? mangoes ? kiwis ? (cheap)".
+(3) The plums are the second-most expensive: "(expensive) ? ? plums ? ? (cheap)".
+(4) The loquats are more expensive than the apples: "(expensive) ? ? ? loquats ? ? ? (cheap)".
+(5) The kiwis are less expensive than the apples: "(expensive) ? ? ? loquats ? kiwis ? ? (cheap)".
+(6) The loquats are the fourth-most expensive: "(expensive) ? ? ? loquats ? ? ? (cheap)".
+Combining all the statements, we can deduce the following ordering: "(expensive) oranges pears plums loquats kiwis apples mangoes (cheap)".
+According to this ordering, the third-most expensive fruit is the pears.
+The pears are the third-most expensive. Therefore, the answer is (C).
+
+Wrong Response: (1) The pears are less expensive than the oranges: "pears < oranges".
+(2) The mangoes are less expensive than the kiwis: "mangoes < kiwis".
+(3) The plums are the second-most expensive: "plums is second".
+(4) The loquats are more expensive than the apples: "loquats > apples".
+(5) The kiwis are less expensive than the apples: "kiwis < apples".
+(6) The loquats are the fourth-most expensive: "loquats is fourth".
+From (1), (2), and (5), we can deduce the following ordering: "plums < mangoes < kiwis < apples < pears < oranges < loquats".
+According to this ordering, the third-most expensive fruit is the kiwis.
+The kiwis are the third-most expensive. Therefore, the answer is (B).
+
+Q: The following paragraphs each describe a set of seven objects arranged in a fixed order. The statements are logically consistent within each paragraph. A fruit stand sells seven fruits: apples, plums, mangoes, watermelons, oranges, kiwis, and loquats. The watermelons are less expensive than the plums. The watermelons are more expensive than the oranges. The kiwis are less expensive than the oranges. The apples are more expensive than the loquats. The plums are less expensive than the mangoes. The mangoes are the third-most expensive.
+Options:
+(A) The apples are the third-most expensive
+(B) The plums are the third-most expensive
+(C) The mangoes are the third-most expensive
+(D) The watermelons are the third-most expensive
+(E) The oranges are the third-most expensive
+(F) The kiwis are the third-most expensive
+(G) The loquats are the third-most expensive
+
+Right Response: (1) The watermelons are less expensive than the plums: "watermelons < plums".
+(2) The watermelons are more expensive than the oranges: "watermelons > oranges".
+(3) The kiwis are less expensive than the oranges: "kiwis < oranges".
+(4) The apples are more expensive than the loquats: "apples > loquats".
+(5) The plums are less expensive than the mangoes: "plums < mangoes".
+(6) The mangoes are the third-most expensive: "mangoes is the 3rd".
+Combining all the statements, we can deduce the following ordering: "kiwis < oranges < watermelons < plums < mangoes < apples < loquats".
+According to this ordering, the fruit that is the third-most expensive is the mangoes.
+The mangoes are the third-most expensive. Therefore, the answer is (C).
+
+Wrong Response: (1) The watermelons are less expensive than the plums: "watermelons < plums".
+(2) The watermelons are more expensive than the oranges: "watermelons > oranges".
+(3) The kiwis are less expensive than the oranges: "kiwis < oranges".
+(4) The apples are more expensive than the loquats: "apples > loquats".
+(5) The plums are less expensive than the mangoes: "plums < mangoes".
+(6) The mangoes are the third-most expensive: "mangoes is the 3rd".
+Combining all the statements, we can deduce the following ordering: "kiwis < oranges < watermelons < plums < mangoes < apples < loquats".
+According to this ordering, the third-most expensive fruit is the watermelons.
+The watermelons are the third-most expensive. Therefore, the answer is (D).
+
+Q: The following paragraphs each describe a set of seven objects arranged in a fixed order. The statements are logically consistent within each paragraph. A fruit stand sells seven fruits: mangoes, watermelons, peaches, kiwis, oranges, cantaloupes, and plums. The watermelons are the cheapest. The peaches are more expensive than the mangoes. The cantaloupes are the second-most expensive. The oranges are more expensive than the cantaloupes. The peaches are less expensive than the plums. The kiwis are the third-cheapest.
+Options:
+(A) The mangoes are the most expensive
+(B) The watermelons are the most expensive
+(C) The peaches are the most expensive
+(D) The kiwis are the most expensive
+(E) The oranges are the most expensive
+(F) The cantaloupes are the most expensive
+(G) The plums are the most expensive
+
+Right Response: (1) The watermelons are the cheapest: "(cheapest) watermelons ? ? ? ? ?".
+(2) The peaches are more expensive than the mangoes: "(cheapest) watermelons ? peaches ? mangoes ? ?".
+(3) The cantaloupes are the second-most expensive: "(cheapest) watermelons ? peaches ? mangoes cantaloupes ?".
+(4) The oranges are more expensive than the cantaloupes: "(cheapest) watermelons ? peaches ? mangoes cantaloupes oranges ?".
+(5) The peaches are less expensive than the plums: "(cheapest) watermelons ? peaches ? mangoes cantaloupes oranges ? plums".
+(6) The kiwis are the third-cheapest: "(cheapest) watermelons ? peaches ? mangoes cantaloupes oranges kiwis plums".
+According to this ordering, the most expensive fruit is the oranges.
+The oranges are the most expensive. Therefore, the answer is (E).
+
+Wrong Response: (1) The watermelons are the cheapest: "(cheapest) watermelons ? ? ? ? ? ?".
+(2) The peaches are more expensive than the mangoes: "(cheapest) watermelons ? peaches ? mangoes ? ? ?".
+(3) The cantaloupes are the second-most expensive: "(cheapest) watermelons ? peaches ? mangoes ? cantaloupes ? ?".
+(4) The oranges are more expensive than the cantaloupes: "(cheapest) watermelons ? peaches ? mangoes ? cantaloupes ? oranges ? ?".
+(5) The peaches are less expensive than the plums: "(cheapest) watermelons ? peaches ? mangoes ? cantaloupes ? oranges ? ? plums".
+(6) The kiwis are the third-cheapest: "(cheapest) watermelons ? peaches ? mangoes ? cantaloupes ? oranges kiwis ? plums".
+According to this ordering, the most expensive fruit is the plums.
+The plums are the most expensive. Therefore, the answer is (G).
+
+
+Q: {QUESTION}
+Right Response: {RIGHT}
+Wrong Response: {WRONG}

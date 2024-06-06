@@ -1,0 +1,46 @@
+Question Description: Determine which of two sentences is sarcastic.
+You need to complete the Wrong Response which requires you give the most likely incorrect answer to the question and the rationale for the incorrect answer. The incorrect answer and rationale in the Wrong Response must be different from the correct answer and rationale in the Right Response.
+
+Q: Which statement is sarcastic?
+Options:
+(A) Isn't it super sexist that on the internet everyone is male until proven otherwise?
+(B) Isn't it super fun that on the internet everyone is male until proven otherwise?
+
+Right Response: If we look at (A), it states that it is sexist that on the internet everyone is male until proven otherwise. This statement is highlighting a potential issue of gender bias and is not sarcastic in nature.
+If we look at (B), it states that it is super fun that on the internet everyone is male until proven otherwise. This statement is using irony to suggest that it is not actually fun, but rather a problematic and biased practice.
+Based on the above analysis, the sarcastic option is (B). Therefore, the answer is (B).
+
+Wrong Response: If we look at (A), it suggests that it is sexist that on the internet everyone is assumed to be male until proven otherwise. This statement highlights the irony and sarcasm by pointing out the unfairness and bias in assuming everyone's gender online.
+If we look at (B), it suggests that it is fun that on the internet everyone is assumed to be male until proven otherwise. This statement does not contain any irony or sarcasm, as it presents a positive and light-hearted perspective on the situation.
+Above the above, the sarcastic option is (A). Therefore, the answer is (A).
+
+Q: Which statement is sarcastic?
+Options:
+(A) When driving, it's very helpful to keep your foot in one place you know
+(B) When driving, it's very difficult to keep your foot in one place you know
+
+Right Response: If we look at (A), it says that when driving, it's very helpful to keep your foot in one place. This statement is straightforward and does not contain any irony or sarcasm.
+If we look at (B), it says that when driving, it's very difficult to keep your foot in one place. This statement implies that it is challenging to keep your foot steady while driving, which is not typically the case. The use of the word "difficult" in this context suggests a sarcastic tone.
+Above the above, the sarcastic option is (B). Therefore, the answer is (B).
+
+Wrong Response: If we look at (A), it says that when driving, it's very helpful to keep your foot in one place you know. This statement seems to be ironic because it suggests that keeping your foot in one place while driving is not helpful at all, which is contrary to common knowledge and safe driving practices.
+If we look at (B), it says that when driving, it's very difficult to keep your foot in one place you know. This statement is a neutral observation and does not contain any sarcasm or irony.
+Above the above, the sarcastic option is (A). Therefore, the answer is (A).
+
+Q: Which statement is sarcastic?
+Options:
+(A) You can still achieve the American Dream after working at Walmart
+(B) You can still achieve the American Dream of working at Walmart
+
+Right Response: If we look at (A), it states that you can still achieve the American Dream after working at Walmart, implying that working at Walmart is not a hindrance to achieving the American Dream. This statement is arguably a neutral and valid statement.
+If we look at (B), it states that you can still achieve the American Dream of working at Walmart, implying that working at Walmart is the epitome of the American Dream. This statement seems to be making a sarcastic comment about the American Dream and the value of working at Walmart.
+Above the above, the sarcastic option is (B). Therefore, the answer is (B).
+
+Wrong Response: If we look at (A), it says that you can still achieve the American Dream after working at Walmart, implying that working at Walmart is not typically seen as a path to achieving the American Dream. This statement seems to be making a sarcastic remark about the perceived lack of upward mobility or success associated with working at Walmart.
+If we look at (B), it says that you can still achieve the American Dream of working at Walmart, implying that working at Walmart is indeed a part of the American Dream. This statement does not appear to contain any sarcasm or irony.
+Above the above, the sarcastic option is (A). Therefore, the answer is (A).
+
+
+Q: {QUESTION}
+Right Response: {RIGHT}
+Wrong Response: {WRONG}

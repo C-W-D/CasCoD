@@ -1,0 +1,109 @@
+Question Description: Answer questions about which times certain events could have occurred.
+You need to complete the Wrong Response which requires you give the most likely incorrect answer to the question and the rationale for the incorrect answer. The incorrect answer and rationale in the Wrong Response must be different from the correct answer and rationale in the Right Response.
+
+Q: Today, Emily went to the bakery. Between what times could they have gone?
+We know that:
+Emily woke up at 5am.
+Nancy saw Emily sitting on a rooftop from 6am to 7am.
+Betty saw Emily reading at the library from 7am to 8am.
+Jason saw Emily buying lunch at the deli from 8am to 6pm.
+David saw Emily attending class at the school from 6pm to 7pm.
+Samantha saw Emily driving to the water park from 7pm to 10pm.
+The bakery was closed after 10pm.
+Between what times could Emily have gone to the bakery?
+Options:
+(A) 5am to 6am
+(B) 8am to 6pm
+(C) 6pm to 7pm
+(D) 7am to 8am
+
+Right Response: Wake-up time: 5am.
+5am-6am: sitting on a rooftop.
+6am-7am: free.
+7am-8am: reading at the library.
+8am-6pm: buying lunch at the deli.
+6pm-7pm: attending class at the school.
+7pm-10pm: driving to the water park.
+The bakery closure time: 10pm.
+The only time when Emily could have gone to the bakery was 5am to 6am. Therefore, the answer is (A).
+
+Wrong Response: Wake-up time: 5am.
+5am-6am: sitting on a rooftop.
+6am-7am: free.
+7am-8am: reading at the library.
+8am-6pm: buying lunch at the deli.
+6pm-7pm: attending class at the school.
+7pm-10pm: driving to the water park.
+The bakery closure time: 10pm.
+The only time when Emily could have gone to the bakery was 7am to 8am. Therefore, the answer is (D).
+
+Q: Today, Andrew went to the art show. Between what times could they have gone?
+We know that:
+Andrew woke up at 6am.
+Kimberly saw Andrew waiting at the airport from 10am to 12pm.
+Anthony saw Andrew attending class at the school from 12pm to 7pm.
+John saw Andrew working out at the gym from 7pm to 8pm.
+The art show was closed after 8pm.
+Between what times could Andrew have gone to the art show?
+Options:
+(A) 6am to 10am
+(B) 7pm to 8pm
+(C) 12pm to 7pm
+(D) 10am to 12pm
+
+Right Response: Wake-up time: 6am.
+6am-10am: free.
+10am-12pm: waiting at the airport.
+12pm-7pm: attending class at the school.
+7pm-8pm: working out at the gym.
+The art show closure time: 8pm.
+The only time when Andrew could have gone to the art show was 6am to 10am. Therefore, the answer is (A).
+
+Wrong Response: Wake-up time: 6am.
+6am-10am: free.
+10am-12pm: waiting at the airport.
+12pm-7pm: attending class at the school.
+7pm-8pm: working out at the gym.
+The art show closure time: 8pm.
+The only time when Andrew could have gone to the art show was 7pm to 8pm. Therefore, the answer is (B).
+
+Q: Today, Steven went to the gas station. Between what times could they have gone?
+We know that:
+Steven woke up at 7am.
+Ashley saw Steven stretching at a yoga studio from 7am to 10am.
+William saw Steven reading at the library from 1pm to 2pm.
+Jennifer saw Steven working at the office from 2pm to 3pm.
+Michael saw Steven watching a movie at the theater from 3pm to 7pm.
+Mary saw Steven waiting at the train station from 7pm to 10pm.
+The gas station was closed after 10pm.
+Between what times could Steven have gone to the gas station?
+Options:
+(A) 7am to 10am
+(B) 7pm to 10pm
+(C) 10am to 1pm
+(D) 3pm to 7pm
+
+Right Response: Wake-up time: 7am.
+7am-10am: stretching at a yoga studio.
+10am-1pm: free.
+1pm-2pm: reading at the library.
+2pm-3pm: working at the office.
+3pm-7pm: watching a movie at the theater.
+7pm-10pm: waiting at the train station.
+The gas station closure time: 10pm.
+The only time when Steven could have gone to the gas station was 10am to 1pm. Therefore, the answer is (C).
+
+Wrong Response: Wake-up time: 7am.
+7am-10am: stretching at a yoga studio.
+10am-1pm: free.
+1pm-2pm: reading at the library.
+2pm-3pm: working at the office.
+3pm-7pm: watching a movie at the theater.
+7pm-10pm: waiting at the train station.
+The gas station closure time: 10pm.
+The only time when Steven could have gone to the gas station was 7pm to 10pm. Therefore, the answer is (B).
+
+
+Q: {QUESTION}
+Right Response: {RIGHT}
+Wrong Response: {WRONG}

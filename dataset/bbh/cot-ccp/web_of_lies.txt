@@ -1,0 +1,55 @@
+Question Description: Evaluate a random boolean function expressed as a word problem.
+You need to complete the Wrong Response which requires you give the most likely incorrect answer to the question and the rationale for the incorrect answer. The incorrect answer and rationale in the Wrong Response must be different from the correct answer and rationale in the Right Response.
+
+Q: Question: Sima lies. Maybelle says Sima tells the truth. Audrie says Maybelle lies. Leda says Audrie tells the truth. Shaunda says Leda lies. Does Shaunda tell the truth?
+
+Right Response: (1) Sima lies. So, we know that Sima lies.
+(2) Maybelle says Sima tells the truth. Since we know from (1) that Sima lies, if Maybelle says Sima tells the truth, then Maybelle lies.
+(3) Audrie says Maybelle lies. Since we know from (2) that Maybelle lies, if Audrie says Maybelle lies, then Audrie tells the truth.
+(4) Leda says Audrie tells the truth. Since we know from (3) that Audrie tells the truth, if Leda says Audrie tells the truth, then Leda lies.
+(5) Shaunda says Leda lies. Since we know from (4) that Leda lies, if Shaunda says Leda lies, then Shaunda tells the truth.
+Now, the question asks: Does Shaunda tell the truth? We know from (5) that Shaunda tells the truth. Therefore, the answer is No.
+
+Wrong Response: (1) Sima lies. So, we know that Sima lies.
+(2) Maybelle says Sima tells the truth. Since we know from (1) that Sima lies, if Maybelle says Sima tells the truth, then Maybelle lies.
+(3) Audrie says Maybelle lies. Since we know from (2) that Maybelle lies, if Audrie says Maybelle lies, then Audrie tells the truth.
+(4) Leda says Audrie tells the truth. Since we know from (3) that Audrie tells the truth, if Leda says Audrie tells the truth, then Leda lies.
+(5) Shaunda says Leda lies. Since we know from (4) that Leda lies, if Shaunda says Leda lies, then Shaunda tells the truth.
+Now, the question asks: Does Shaunda tell the truth? We know from (5) that Shaunda tells the truth. Therefore, the answer is Yes.
+
+Q: Question: Shalonda lies. Teressa says Shalonda tells the truth. Tamika says Teressa lies. Lorine says Tamika tells the truth. Jaymie says Lorine lies. Does Jaymie tell the truth?
+
+Right Response: (1) Shalonda lies. So, we know that Shalonda lies.
+(2) Teressa says Shalonda tells the truth. Since we know from (1) that Shalonda lies, if Teressa says Shalonda tells the truth, then Teressa lies.
+(3) Tamika says Teressa lies. Since we know from (2) that Teressa lies, if Tamika says Teressa lies, then Tamika tells the truth.
+(4) Lorine says Tamika tells the truth. Since we know from (3) that Tamika tells the truth, if Lorine says Tamika tells the truth, then Lorine tells the truth.
+(5) Jaymie says Lorine lies. Since we know from (4) that Lorine tells the truth, if Jaymie says Lorine lies, then Jaymie tells the truth.
+Now, the question asks: Does Jaymie tell the truth? We know from (5) that Jaymie tells the truth. Therefore, the answer is No.
+
+Wrong Response: (1) Shalonda lies. So, we know that Shalonda lies.
+(2) Teressa says Shalonda tells the truth. Since we know from (1) that Shalonda lies, if Teressa says Shalonda tells the truth, then Teressa lies.
+(3) Tamika says Teressa lies. Since we know from (2) that Teressa lies, if Tamika says Teressa lies, then Tamika tells the truth.
+(4) Lorine says Tamika tells the truth. Since we know from (3) that Tamika tells the truth, if Lorine says Tamika tells the truth, then Lorine tells the truth.
+(5) Jaymie says Lorine lies. Since we know from (4) that Lorine tells the truth, if Jaymie says Lorine lies, then Jaymie tells the truth.
+Now, the question asks: Does Jaymie tell the truth? We know from (5) that Jaymie tells the truth. Therefore, the answer is Yes.
+
+Q: Question: Sima lies. Maybelle says Sima tells the truth. Audrie says Maybelle lies. Leda says Audrie tells the truth. Shaunda says Leda lies. Does Shaunda tell the truth?
+
+Right Response: (1) Sima lies. So, we know that Sima lies.
+(2) Maybelle says Sima tells the truth. Since we know from (1) that Sima lies, if Maybelle says Sima tells the truth, then Maybelle lies.
+(3) Audrie says Maybelle lies. Since we know from (2) that Maybelle lies, if Audrie says Maybelle lies, then Audrie tells the truth.
+(4) Leda says Audrie tells the truth. Since we know from (3) that Audrie tells the truth, if Leda says Audrie tells the truth, then Leda lies.
+(5) Shaunda says Leda lies. Since we know from (4) that Leda lies, if Shaunda says Leda lies, then Shaunda tells the truth.
+Now, the question asks: Does Shaunda tell the truth? We know from (5) that Shaunda tells the truth. Therefore, the answer is No.
+
+Wrong Response: (1) Sima lies. So, we know that Sima lies.
+(2) Maybelle says Sima tells the truth. Since we know from (1) that Sima lies, if Maybelle says Sima tells the truth, then Maybelle lies.
+(3) Audrie says Maybelle lies. Since we know from (2) that Maybelle lies, if Audrie says Maybelle lies, then Audrie tells the truth.
+(4) Leda says Audrie tells the truth. Since we know from (3) that Audrie tells the truth, if Leda says Audrie tells the truth, then Leda lies.
+(5) Shaunda says Leda lies. Since we know from (4) that Leda lies, if Shaunda says Leda lies, then Shaunda tells the truth.
+Now, the question asks: Does Shaunda tell the truth? We know from (5) that Shaunda tells the truth. Therefore, the answer is Yes.
+
+
+Q: {QUESTION}
+Right Response: {RIGHT}
+Wrong Response: {WRONG}

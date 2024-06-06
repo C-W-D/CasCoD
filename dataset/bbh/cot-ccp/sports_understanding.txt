@@ -1,0 +1,25 @@
+Question Description: Determine whether an artificially constructed sentence relating to sports is plausible or not.
+You need to complete the Wrong Response which requires you give the most likely incorrect answer to the question and the rationale for the incorrect answer. The incorrect answer and rationale in the Wrong Response must be different from the correct answer and rationale in the Right Response.
+
+Q: Is the following sentence plausible? "Michael Thomas took the snap."
+
+Right Response: Michael Thomas is a wide receiver in American football. Taking the snap is a term used in American football to describe the action of the quarterback receiving the ball from the center to start a play. Therefore, the answer is yes.
+
+Wrong Response: Michael Thomas is a wide receiver in American football. Taking the snap is a term used in American football for the quarterback. Therefore, the answer is no.
+
+Q: Is the following sentence plausible? "Mike Williams scored a bicycle kick in the FA Cup."
+
+Right Response: Mike Williams is an American football player. A bicycle kick is a move commonly seen in soccer. The FA Cup is a soccer tournament in England. Therefore, the answer is no.
+
+Wrong Response: Mike Williams is a football player. Scoring a bicycle kick is a skill commonly seen in football. The FA Cup is a prestigious football competition in England. Therefore, the answer is yes.
+
+Q: Is the following sentence plausible? "Mike Williams scored a bicycle kick in the FA Cup."
+
+Right Response: Mike Williams is an American football player. A bicycle kick is a move commonly seen in soccer. The FA Cup is a soccer tournament in England. Therefore, the answer is no.
+
+Wrong Response: Mike Williams is a football player. Scoring a bicycle kick is a skill commonly seen in football. The FA Cup is a prestigious football competition in England. Therefore, the answer is yes.
+
+
+Q: {QUESTION}
+Right Response: {RIGHT}
+Wrong Response: {WRONG}

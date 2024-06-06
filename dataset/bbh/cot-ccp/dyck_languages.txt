@@ -1,0 +1,345 @@
+Question Description: Correctly close a Dyck-n word.
+You need to complete the Wrong Response which requires you give the most likely incorrect answer to the question and the rationale for the incorrect answer. The incorrect answer and rationale in the Wrong Response must be different from the correct answer and rationale in the Right Response.
+
+Q: Complete the rest of the sequence, making sure that the parentheses are closed properly. Input: [ < [ [ < > ] ] < ( ) > [ { } ] < [ [ ] ] > ( ) < { < [ ] < < [ [ { [ ] } ] ] > > ( [ ( ( ) ) ] ) > } > [ { { < > } } ] > < ( < { } { [ { [ ] } ] } >
+
+Right Response: We should process each input one by one and keep track of the stack configuration.
+0: empty stack
+1: [ ; stack: [
+2: < ; stack: [ <
+3: [ ; stack: [ < [
+4: [ ; stack: [ < [ [
+5: < ; stack: [ < [ [ <
+6: > ; stack: [ < [ [
+7: ] ; stack: [ < [
+8: ] ; stack: [
+9: < ; stack: [ <
+10: ( ; stack: [ < (
+11: ) ; stack: [ <
+12: > ; stack: [
+13: [ ; stack: [ [
+14: { ; stack: [ [ {
+15: } ; stack: [ [
+16: ] ; stack: [
+17: < ; stack: [ <
+18: [ ; stack: [ < [
+19: ] ; stack: [ <
+20: ] ; stack: [
+21: > ; stack: empty
+22: ( ; stack: (
+23: ) ; stack: empty
+24: < ; stack: <
+25: { ; stack: < {
+26: } ; stack: <
+27: { ; stack: < {
+28: [ ; stack: < { [
+29: ] ; stack: < {
+30: ] ; stack: <
+31: } ; stack: empty
+32: ] ; stack: ]
+33: > ; stack: empty
+34: ( ; stack: (
+35: [ ; stack: ( [
+36: ( ; stack: ( ( [
+37: ( ; stack: ( ( ( [
+38: ) ; stack: ( ( ( (
+39: ) ; stack: ( ( ( (
+40: ] ; stack: ( ( ( (
+41: ) ; stack: ( ( ( (
+42: ] ; stack: ( ( ( (
+43: ) ; stack: ( ( ( (
+44: ) ; stack: ( ( ( (
+45: ] ; stack: ( ( ( (
+46: ) ; stack: ( ( ( (
+47: > ; stack: ( ( ( (
+48: } ; stack: ( ( ( (
+49: ] ; stack: ( ( ( (
+50: > ; stack: ( ( ( (
+51: < ; stack: ( ( ( ( <
+52: > ; stack: ( ( ( (
+53: } ; stack: ( ( ( (
+54: } ; stack: ( ( ( ( {
+55: ] ; stack: ( ( ( (
+56: ] ; stack: ( ( (
+57: ] ; stack: ( ( (
+58: } ; stack: ( ( (
+59: ] ; stack: ( ( (
+60: ] ; stack: ( ( (
+61: ] ; stack: ( ( (
+62: ] ; stack: ( ( (
+63: > ; stack: ( ( (
+64: > ; stack: ( (
+65: ( ; stack: ( ( (
+66: [ ; stack: ( ( ( [
+67: ( ; stack: ( ( ( ( (
+68: ( ; stack: ( ( ( ( ( (
+69: ) ; stack: ( ( ( ( (
+70: ) ; stack: ( ( ( (
+71: ] ; stack: ( ( ( (
+72: ) ; stack: ( ( ( (
+73: ) ; stack: ( ( ( (
+74: ] ; stack: ( ( ( (
+75: ) ; stack: ( ( ( (
+76: > ; stack: ( ( ( (
+77: } ; stack: ( ( ( (
+78: } ; stack: ( ( ( ( {
+79: ] ; stack: ( ( ( (
+80: > ; stack: ( ( ( (
+81: < ; stack: ( ( ( ( <
+82: ( ; stack: ( ( ( ( ( (
+83: < ; stack: ( ( ( ( ( ( <
+84: { ; stack: ( ( ( ( ( ( <
+85: } ; stack: ( ( ( ( ( <
+86: { ; stack: ( ( ( ( ( <
+87: [ ; stack: ( ( ( ( ( < [
+88: { ; stack: ( ( ( ( ( <
+89: [ ; stack: ( ( ( ( ( < [ [
+90: ] ; stack: ( ( ( ( ( <
+91: ] ; stack: ( ( ( ( <
+92: } ; stack: ( ( ( <
+93: ] ; stack: ( ( <
+94: ] ; stack: ( <
+95: } ; stack: empty
+96: ] ; stack: ]
+97: > ; stack: empty
+98: < ; stack: <
+99: ( ; stack: < (
+100: < ; stack: < ( <
+101: { ; stack: < ( < {
+102: } ; stack: < ( <
+103: { ; stack: < ( < {
+104: [ ; stack: < ( < { [
+105: { ; stack: < ( < {
+106: [ ; stack: < ( < { [ [
+107: ] ; stack: < ( < { [
+108: ] ; stack: < ( < {
+109: } ; stack: < ( <
+110: ] ; stack: < [
+111: ] ; stack: <
+112: } ; stack: empty
+Now, we have reached the end. The final stack is "< ( < [".
+We will need to pop out "[", "(", "<" one by one in that order.
+So, we need "]", ")", ">". Therefore, the answer is ) > ].
+
+Wrong Response: We should process each input one by one and keep track of the stack configuration.
+0: empty stack
+1: [ ; stack: [
+2: < ; stack: [ <
+3: [ ; stack: [ < [
+4: [ ; stack: [ < [ [
+5: < ; stack: [ < [ [ <
+6: > ; stack: [ < [ [
+7: ] ; stack: [ < [
+8: ] ; stack: [
+9: < ; stack: [ <
+10: ( ; stack: [ < (
+11: ) ; stack: [ <
+12: > ; stack: [
+13: [ ; stack: [ [
+14: { ; stack: [ [ {
+15: } ; stack: [ [
+16: ] ; stack: [
+17: < ; stack: [ <
+18: [ ; stack: [ < [
+19: ] ; stack: [ <
+20: ] ; stack: [
+21: < ; stack: [ <
+22: [ ; stack: [ < [
+23: ] ; stack: [ <
+24: ] ; stack: [
+25: > ; stack: [
+26: ( ; stack: ( [
+27: ) ; stack: [
+28: [ ; stack: [ [
+29: ( ; stack: [ [ (
+30: ( ; stack: [ [ ( (
+31: ) ; stack: [ [ (
+32: ) ; stack: [ (
+33: ] ; stack: [
+34: ) ; stack: )
+35: ] ; stack: ]
+36: ) ; stack: )
+37: > ; stack: empty
+38: } ; stack: }
+39: > ; stack: } >
+40: [ ; stack: } > [
+41: { ; stack: } > [ {
+42: } ; stack: } > [
+43: ] ; stack: } >
+44: ] ; stack: }
+45: < ; stack: } < [
+46: < ; stack: } < [ <
+47: [ ; stack: } < [ < [
+48: { ; stack: } < [ < [ {
+49: [ ; stack: } < [ < [ { [
+50: ] ; stack: } < [ < [ {
+51: ] ; stack: } < [ {
+52: ] ; stack: } <
+53: > ; stack: empty
+54: > ; stack: >
+55: ( ; stack: > (
+56: ) ; stack: >
+57: < ; stack: > < [
+58: { ; stack: > < [ {
+59: } ; stack: > < [
+60: { ; stack: > < [ {
+61: [ ; stack: > < [ { [
+62: ] ; stack: > < [ {
+63: ] ; stack: > < [
+64: ] ; stack: > <
+65: > ; stack: empty
+66: ( ; stack: (
+67: [ ; stack: ( [
+68: ( ; stack: ( [ (
+69: ( ; stack: ( [ ( (
+70: ) ; stack: ( [ (
+71: ) ; stack: ( [
+72: ] ; stack: [
+73: ] ; stack: empty
+74: ) ; stack: )
+75: ] ; stack: ]
+76: ) ; stack: )
+77: ] ; stack: ]
+78: > ; stack: empty
+79: } ; stack: }
+80: > ; stack: } >
+81: < ; stack: } < [
+82: ( ; stack: } < [ (
+83: < ; stack: } < [ ( <
+84: { ; stack: } < [ ( < {
+85: } ; stack: } < [ ( <
+86: ] ; stack: } < [ (
+87: ] ; stack: } < [
+88: } ; stack: }
+Now, we have reached the end. The final stack is "}".
+We will need to pop out "}" one by one.
+So, we need "}". Therefore, the answer is }.
+
+Q: Complete the rest of the sequence, making sure that the parentheses are closed properly. Input: [ ( [ ( [ < ( ) > [ < { } { [ ] } [ ] [ ] > { ( < { < > } > ) } ] ] ) ] )
+
+Right Response: We should process each input one by one and keep track of the stack configuration.
+0: empty stack
+1: [ ; stack: [
+2: ( ; stack: [ (
+3: [ ; stack: [ ( [
+4: ( ; stack: [ ( [ (
+5: [ ; stack: [ ( [ ( [
+6: < ; stack: [ ( [ ( [ <
+7: ( ; stack: [ ( [ ( [ < (
+8: ) ; stack: [ ( [ ( [ <
+9: > ; stack: [ ( [ ( [
+10: [ ; stack: [ ( [ ( [ [
+11: < ; stack: [ ( [ ( [ [ <
+12: { ; stack: [ ( [ ( [ [ { <
+13: } ; stack: [ ( [ ( [ [ {
+14: { ; stack: [ ( [ ( [ [
+15: [ ; stack: [ ( [ ( [
+16: ] ; stack: [ ( [ (
+17: } ; stack: [ ( [ (
+18: [ ; stack: [ ( [
+19: ] ; stack: [ (
+20: [ ; stack: [
+21: ] ; stack: empty
+22: [ ; stack: [
+23: ] ; stack: empty
+24: > ; stack: >
+25: { ; stack: > {
+26: ( ; stack: > { (
+27: < ; stack: > { ( <
+28: { ; stack: > { ( < {
+29: < ; stack: > { ( < { <
+30: > ; stack: > { ( < {
+31: } ; stack: > { ( <
+32: > ; stack: > { <
+33: ) ; stack: > {
+34: } ; stack: >
+35: ] ; stack: empty
+36: ] ; stack: ]
+37: ) ; stack: ]
+38: ] ; stack: empty
+39: ) ; stack: )
+40: ] ; stack: empty
+41: ) ; stack: )
+42: ] ; stack: empty
+43: ) ; stack: )
+44: ] ; stack: empty
+45: ) ; stack: )
+46: ] ; stack: empty
+Now, we have reached the end. The final stack is empty.
+We don't need to pop out any more elements. Therefore, the answer is ].
+
+Wrong Response: We should process each input one by one and keep track of the stack configuration.
+0: empty stack
+1: [ ; stack: [
+2: ( ; stack: [ (
+3: [ ; stack: [ ( [
+4: ( ; stack: [ ( [ (
+5: [ ; stack: [ ( [ ( [
+6: < ; stack: [ ( [ ( [ <
+7: ( ; stack: [ ( [ ( [ < (
+8: ) ; stack: [ ( [ ( [ <
+9: > ; stack: [ ( [ ( [
+10: [ ; stack: [ ( [ ( [ [
+11: < ; stack: [ ( [ ( [ [ <
+12: { ; stack: [ ( [ ( [ [
+13: } ; stack: [ ( [ ( [ [
+14: { ; stack: [ ( [ ( [ { {
+15: [ ; stack: [ ( [ ( [ { { [
+16: ] ; stack: [ ( [ ( [ { { [
+17: } ; stack: [ ( [ ( [ { {
+18: [ ; stack: [ ( [ ( [ { { [
+19: ] ; stack: [ ( [ ( [ { {
+20: [ ; stack: [ ( [ ( [ { { [
+21: ] ; stack: [ ( [ ( [ { {
+22: > ; stack: [ ( [ ( [ {
+23: { ; stack: [ ( [ ( [ { {
+24: ( ; stack: [ ( [ ( [ { ( {
+25: < ; stack: [ ( [ ( [ { ( { <
+26: { ; stack: [ ( [ ( [ { ( { { {
+27: < ; stack: [ ( [ ( [ { ( { { < <
+28: > ; stack: [ ( [ ( [ { ( { { <
+29: } ; stack: [ ( [ ( [ { ( { {
+30: > ; stack: [ ( [ ( [ { ( {
+31: ) ; stack: [ ( [ ( [ { (
+32: } ; stack: [ ( [ ( [ {
+33: ] ; stack: [ ( [ ( [
+34: ] ; stack: [ ( [ (
+35: ) ; stack: [ ( [
+36: ] ; stack: [ (
+37: ) ; stack: empty
+Now, we have reached the end. The final stack is empty.
+Therefore, the answer is empty.
+
+Q: Complete the rest of the sequence, making sure that the parentheses are closed properly. Input: { [ { { { } } }
+
+Right Response: We should process each input one by one and keep track of the stack configuration.
+0: empty stack
+1: { ; stack: {
+2: [ ; stack: { [
+3: { ; stack: { [ {
+4: { ; stack: { [ { {
+5: { ; stack: { [ { { {
+6: } ; stack: { [ { {
+7: } ; stack: { [ {
+Now, we have reached the end. The final stack is "{ [ {".
+We will need to pop out "{", "[", "{" one by one in that order.
+So, we need "}", "]", "}". Therefore, the answer is ] }.
+
+Wrong Response: We should process each input one by one and keep track of the stack configuration.
+0: empty stack
+1: { ; stack: {
+2: [ ; stack: { [
+3: { ; stack: { [ {
+4: { ; stack: { [ { {
+5: { ; stack: { [ { { {
+6: } ; stack: { [ { {
+7: } ; stack: { [ {
+8: } ; stack: { {
+Now, we have reached the end. The final stack is "{ { {".
+We will need to pop out "{", "{", "{" one by one in that order.
+So, we need "}", "}", "}". Therefore, the answer is } } }.
+
+
+Q: {QUESTION}
+Right Response: {RIGHT}
+Wrong Response: {WRONG}

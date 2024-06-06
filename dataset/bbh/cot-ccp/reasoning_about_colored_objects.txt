@@ -1,0 +1,80 @@
+Question Description: Answer extremely simple questions about the colors of objects on a surface.
+You need to complete the Wrong Response which requires you give the most likely incorrect answer to the question and the rationale for the incorrect answer. The incorrect answer and rationale in the Wrong Response must be different from the correct answer and rationale in the Right Response.
+
+Q: On the nightstand, you see three black envelopes, one black teddy bear, three black crayons, three teal crayons, three green crayons, and one green envelope. If I remove all the teddy bears from the nightstand, how many green things remain on it?
+Options:
+(A) zero
+(B) one
+(C) two
+(D) three
+(E) four
+(F) five
+(G) six
+(H) seven
+(I) eight
+(J) nine
+(K) ten
+(L) eleven
+(M) twelve
+(N) thirteen
+(O) fourteen
+(P) fifteen
+(Q) sixteen
+
+Right Response: According to this question, there are three black envelopes, one black teddy bear, three black crayons, three teal crayons, three green crayons, and one green envelope on the nightstand. If we remove all the teddy bears, we are left with three black envelopes, three black crayons, three teal crayons, three green crayons, and one green envelope. 
+Out of these remaining items, there are four green things on the nightstand: the three green crayons and the green envelope. 
+Therefore, the answer is (E).
+
+Wrong Response: According to this question, there are three green crayons and one green envelope on the nightstand. If we remove all the teddy bears, the green envelope remains. Therefore, the answer is (B) one.
+
+Q: On the desk, you see a set of objects arranged in a row: a pink teddy bear, a turquoise textbook, a gold pencil, a grey envelope, and a burgundy sheet of paper. What is the color of the object furthest from the sheet of paper?
+Options:
+(A) red
+(B) orange
+(C) yellow
+(D) green
+(E) blue
+(F) brown
+(G) magenta
+(H) fuchsia
+(I) mauve
+(J) teal
+(K) turquoise
+(L) burgundy
+(M) silver
+(N) gold
+(O) black
+(P) grey
+(Q) purple
+(R) pink
+
+Right Response: According to this question, the objects are arranged in a row, from left to right, as follows: (1) a pink teddy bear, (2) a turquoise textbook, (3) a gold pencil, (4) a grey envelope, (5) a burgundy sheet of paper.
+The object furthest from the sheet of paper corresponds to (1), which is a pink teddy bear.
+The color of the teddy bear is pink. Therefore, the answer is (R).
+
+Wrong Response: According to this question, the objects are arranged in a row, from left to right, as follows: (1) a pink teddy bear, (2) a turquoise textbook, (3) a gold pencil, (4) a grey envelope, (5) a burgundy sheet of paper.
+The object furthest from the sheet of paper corresponds to (3), which is a gold pencil.
+The color of the object furthest from the sheet of paper is gold. Therefore, the answer is (N).
+
+Q: On the floor, you see a bunch of items arranged in a row: a red bracelet, a yellow crayon, a silver notebook, and a mauve dog leash. How many non-silver items do you see to the left of the mauve item?
+Options:
+(A) zero
+(B) one
+(C) two
+(D) three
+(E) four
+(F) five
+(G) six
+
+Right Response: According to this question, the objects are arranged in a row, from left to right, as follows: (1) a red bracelet, (2) a yellow crayon, (3) a silver notebook, (4) a mauve dog leash.
+The mauve item is the fourth item, namely (4). There are two non-silver items to the left of the mauve item, which are the red bracelet and the yellow crayon.
+The number of non-silver items to the left of the mauve item is two. Therefore, the answer is (C).
+
+Wrong Response: According to this question, the objects are arranged in a row, from left to right, as follows: (1) a red bracelet, (2) a yellow crayon, (3) a silver notebook, (4) a mauve dog leash.
+The mauve dog leash is the fourth item, namely (4). There are three items to the left of the mauve item, which are the red bracelet, the yellow crayon, and the silver notebook.
+The number of non-silver items to the left of the mauve item is three. Therefore, the answer is (D).
+
+
+Q: {QUESTION}
+Right Response: {RIGHT}
+Wrong Response: {WRONG}

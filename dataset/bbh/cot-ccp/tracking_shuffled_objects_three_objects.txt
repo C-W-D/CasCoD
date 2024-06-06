@@ -1,0 +1,64 @@
+Question Description: A task requiring determining the final positions of a set of objects given their initial positions and a description of a sequence of swaps.
+You need to complete the Wrong Response which requires you give the most likely incorrect answer to the question and the rationale for the incorrect answer. The incorrect answer and rationale in the Wrong Response must be different from the correct answer and rationale in the Right Response.
+
+Q: Alice, Bob, and Claire are friends and avid readers who occasionally trade books. At the start of the semester, they each buy one new book: Alice gets The Odyssey, Bob gets The Pearl, and Claire gets Frankenstein.
+As the semester proceeds, they start trading around the new books. First, Claire and Bob swap books. Then, Claire and Alice swap books. Finally, Bob and Claire swap books. At the end of the semester, Bob has
+Options:
+(A) The Odyssey
+(B) The Pearl
+(C) Frankenstein
+
+Right Response: (0) At the start: Alice: The Odyssey, Bob: The Pearl, Claire: Frankenstein.
+(1) Claire and Bob swap books: Alice: The Odyssey, Bob: Frankenstein, Claire: The Pearl.
+(2) Claire and Alice swap books: Alice: Frankenstein, Bob: Frankenstein, Claire: The Odyssey.
+(3) Bob and Claire swap books: Alice: Frankenstein, Bob: The Odyssey, Claire: The Pearl.
+At the end of the semester, Bob has The Odyssey. Therefore, the answer is (A).
+
+Wrong Response: (0) At the start: Alice: The Odyssey, Bob: The Pearl, Claire: Frankenstein.
+(1) Claire and Bob swap books: Alice: The Odyssey, Bob: Frankenstein, Claire: The Pearl.
+(2) Claire and Alice swap books: Alice: Frankenstein, Bob: The Odyssey, Claire: The Pearl.
+(3) Bob and Claire swap books: Alice: Frankenstein, Bob: The Pearl, Claire: The Odyssey.
+At the end of the semester, Bob has The Pearl. Therefore, the answer is (B).
+
+Q: Alice, Bob, and Claire are holding a white elephant gift exchange. At the start of the event, they are each holding a present of a different color: Alice has a pink ball, Bob has a black ball, and Claire has a purple present.
+As the event progresses, pairs of people swap gifts. First, Bob and Claire swap their gifts. Then, Alice and Claire swap their gifts. Finally, Claire and Bob swap their gifts. At the end of the event, Alice has the
+Options:
+(A) pink ball
+(B) black ball
+(C) purple present
+
+Right Response: (0) At the start: Alice: pink ball, Bob: black ball, Claire: purple present.
+(1) Bob and Claire swap gifts: Alice: pink ball, Bob: purple present, Claire: black ball.
+(2) Alice and Claire swap gifts: Alice: purple present, Bob: pink ball, Claire: black ball.
+(3) Claire and Bob swap gifts: Alice: purple present, Bob: black ball, Claire: pink ball.
+At the end of the event, Alice has the black ball. Therefore, the answer is (B).
+
+Wrong Response: (0) At the start: Alice: pink ball, Bob: black ball, Claire: purple present.
+(1) Bob and Claire swap gifts: Alice: pink ball, Bob: purple present, Claire: black ball.
+(2) Alice and Claire swap gifts: Alice: purple present, Bob: pink ball, Claire: black ball.
+(3) Claire and Bob swap gifts: Alice: purple present, Bob: black ball, Claire: pink ball.
+At the end of the event, Alice has the purple present. Therefore, the answer is (C).
+
+Q: Alice, Bob, and Claire are playing a game. At the start of the game, they are each holding a ball: Alice has a green ball, Bob has a blue ball, and Claire has a brown ball.
+As the game progresses, pairs of players trade balls. First, Claire and Bob swap balls. Then, Alice and Claire swap balls. Finally, Alice and Bob swap balls. At the end of the game, Bob has the
+Options:
+(A) green ball
+(B) blue ball
+(C) brown ball
+
+Right Response: (0) At the start: Alice: green, Bob: blue, Claire: brown.
+(1) Claire and Bob swap balls: Alice: green, Bob: brown, Claire: blue.
+(2) Alice and Claire swap balls: Alice: brown, Bob: brown, Claire: green.
+(3) Alice and Bob swap balls: Alice: blue, Bob: green, Claire: green.
+At the end of the game, Bob has the green ball. Therefore, the answer is (B).
+
+Wrong Response: (0) At the start: Alice: green, Bob: blue, Claire: brown.
+(1) Claire and Bob swap balls: Alice: green, Bob: brown, Claire: blue.
+(2) Alice and Claire swap balls: Alice: brown, Bob: brown, Claire: green.
+(3) Alice and Bob swap balls: Alice: blue, Bob: green, Claire: green.
+At the end of the game, Bob has the green ball. Therefore, the answer is (A).
+
+
+Q: {QUESTION}
+Right Response: {RIGHT}
+Wrong Response: {WRONG}

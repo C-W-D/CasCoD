@@ -1,0 +1,58 @@
+Question Description: A logical deduction task which requires deducing the order of a sequence of objects.
+You need to complete the Wrong Response which requires you give the most likely incorrect answer to the question and the rationale for the incorrect answer. The incorrect answer and rationale in the Wrong Response must be different from the correct answer and rationale in the Right Response.
+
+Q: The following paragraphs each describe a set of three objects arranged in a fixed order. The statements are logically consistent within each paragraph. In a golf tournament, there were three golfers: Mel, Ada, and Ana. Mel finished last. Ana finished second.
+Options:
+(A) Mel finished first
+(B) Ada finished first
+(C) Ana finished first
+
+Right Response: (1) Mel finished last: "(first) ? ? ? Mel (last)".
+(2) Ana finished second: "(first) ? ? Ana ? Mel (last)".
+(3) Combining (1) and (2) we get the following ordering: "(first) ? ? Ana Mel (last)".
+According to this ordering, the person who finished first (the one at the top of this list) is Ada.
+Ada finished first. Therefore, the answer is (B).
+
+Wrong Response: (1) Mel finished last: "(first) ? ? ? Mel (last)".
+(2) Ana finished second: "(first) ? ? Ana ? Mel (last)".
+Based on these statements, we can deduce that Ana finished first, as she is the only one left to be placed in the first position.
+Ana finished first. Therefore, the answer is (C).
+
+Q: The following paragraphs each describe a set of three objects arranged in a fixed order. The statements are logically consistent within each paragraph. On a branch, there are three birds: a cardinal, a hawk, and a hummingbird. The hummingbird is to the right of the hawk. The cardinal is to the left of the hawk.
+Options:
+(A) The cardinal is the second from the left
+(B) The hawk is the second from the left
+(C) The hummingbird is the second from the left
+
+Right Response: (1) The hummingbird is to the right of the hawk: "(left) ? hawk ? hummingbird ? (right)".
+(2) The cardinal is to the left of the hawk: "(left) cardinal hawk hummingbird (right)".
+According to this ordering, the hawk is the second from the left.
+The hawk is the second from the left. Therefore, the answer is (B).
+
+Wrong Response: (1) The hummingbird is to the right of the hawk: "(left) ? hawk ? hummingbird ? (right)".
+(2) The cardinal is to the left of the hawk: "(left) cardinal hawk hummingbird (right)".
+According to this ordering, the bird that is second from the left is the cardinal.
+The cardinal is the second from the left. Therefore, the answer is (A).
+
+Q: The following paragraphs each describe a set of three objects arranged in a fixed order. The statements are logically consistent within each paragraph. In an antique car show, there are three vehicles: a motorcyle, a minivan, and a tractor. The minivan is older than the tractor. The minivan is the second-newest.
+Options:
+(A) The motorcyle is the newest
+(B) The minivan is the newest
+(C) The tractor is the newest
+
+Right Response: (1) The minivan is older than the tractor: "(newest) ? minivan ? tractor ? (oldest)".
+(2) The minivan is the second-newest: "(newest) ? minivan ? (second-newest) tractor ? (oldest)".
+(3) Combining (1) and (2) we get the following ordering: "(newest) minivan (second-newest) tractor (oldest)".
+According to this ordering, the newest vehicle is the tractor.
+The tractor is the newest. Therefore, the answer is (C).
+
+Wrong Response: (1) The minivan is older than the tractor: "(newest) ? minivan ? tractor ? (oldest)".
+(2) The minivan is the second-newest: "(newest) ? minivan ? ? ? tractor ? (oldest)".
+From (2), we can deduce that the motorcycle must be the newest vehicle since it is the only option left.
+According to this ordering, the newest vehicle is the motorcycle.
+The motorcycle is the newest. Therefore, the answer is (A).
+
+
+Q: {QUESTION}
+Right Response: {RIGHT}
+Wrong Response: {WRONG}

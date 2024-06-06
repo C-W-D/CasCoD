@@ -1,0 +1,78 @@
+Question Description: A logical deduction task which requires deducing the order of a sequence of objects.
+You need to complete the Wrong Response which requires you give the most likely incorrect answer to the question and the rationale for the incorrect answer. The incorrect answer and rationale in the Wrong Response must be different from the correct answer and rationale in the Right Response.
+
+Q: The following paragraphs each describe a set of five objects arranged in a fixed order. The statements are logically consistent within each paragraph. A fruit stand sells five fruits: watermelons, loquats, pears, plums, and apples. The pears are the second-cheapest. The loquats are more expensive than the pears. The plums are the second-most expensive. The watermelons are the most expensive.
+Options:
+(A) The watermelons are the third-most expensive
+(B) The loquats are the third-most expensive
+(C) The pears are the third-most expensive
+(D) The plums are the third-most expensive
+(E) The apples are the third-most expensive
+
+Right Response: (1) The pears are the second-cheapest: "cheapest ? pears ? ? ?".
+(2) The loquats are more expensive than the pears: "cheapest ? pears ? loquats ? ?".
+(3) The plums are the second-most expensive: "cheapest ? pears ? loquats ? plums ?".
+(4) The watermelons are the most expensive: "cheapest ? pears ? loquats ? plums watermelons".
+According to this ordering, the third-most expensive fruit is the loquats.
+The loquats are the third-most expensive. Therefore, the answer is (B).
+
+Wrong Response: (1) The pears are the second-cheapest: "? ? pears ? ?".
+(2) The loquats are more expensive than the pears: "? ? pears loquats ?".
+(3) The plums are the second-most expensive: "? ? ? plums ?".
+(4) The watermelons are the most expensive: "watermelons ? ? ? ?".
+Combining all the statements, we can deduce the following ordering: "watermelons plums pears loquats ?".
+According to this ordering, the third-most expensive fruit is the pears.
+The pears are the third-most expensive. Therefore, the answer is (C).
+
+Q: The following paragraphs each describe a set of five objects arranged in a fixed order. The statements are logically consistent within each paragraph. On a shelf, there are five books: a green book, a blue book, a white book, a purple book, and a yellow book. The blue book is to the right of the yellow book. The white book is to the left of the yellow book. The blue book is the second from the right. The purple book is the second from the left.
+Options:
+(A) The green book is the rightmost
+(B) The blue book is the rightmost
+(C) The white book is the rightmost
+(D) The purple book is the rightmost
+(E) The yellow book is the rightmost
+
+Right Response: (1) The blue book is to the right of the yellow book: "(left) ? yellow ? blue ? (right)".
+(2) The white book is to the left of the yellow book: "(left) white ? yellow ? blue ? (right)".
+(3) The blue book is the second from the right: "(left) white ? yellow ? ? blue (right)".
+(4) The purple book is the second from the left: "(left) white purple yellow ? ? blue (right)".
+(5) Combining (1), (2), (3), and (4) we get the following ordering: "(left) white purple yellow ? ? blue (right)".
+According to this ordering, the rightmost book is the green book.
+The green book is the rightmost. Therefore, the answer is (A).
+
+Wrong Response: (1) The blue book is to the right of the yellow book: "(left) ? yellow ? blue ? (right)".
+(2) The white book is to the left of the yellow book: "(left) white ? yellow ? blue ? (right)".
+(3) The blue book is the second from the right: "(left) white ? yellow ? ? blue (right)".
+(4) The purple book is the second from the left: "(left) white purple ? yellow ? ? blue (right)".
+(5) Combining (2), (3), and (4) we get the following ordering: "(left) white purple yellow blue (right)".
+According to this ordering, the rightmost book is the blue book.
+The blue book is the rightmost. Therefore, the answer is (B).
+
+Q: The following paragraphs each describe a set of five objects arranged in a fixed order. The statements are logically consistent within each paragraph. In a golf tournament, there were five golfers: Mel, Dan, Amy, Joe, and Eve. Amy finished below Dan. Mel finished first. Joe finished above Dan. Eve finished last.
+Options:
+(A) Mel finished second-to-last
+(B) Dan finished second-to-last
+(C) Amy finished second-to-last
+(D) Joe finished second-to-last
+(E) Eve finished second-to-last
+
+Right Response: (1) Mel finished first: "Mel ? ? ? ?".
+(2) Amy finished below Dan: "Mel ? Dan Amy ? ?".
+(3) Joe finished above Dan: "Mel Joe Dan Amy ? ?".
+(4) Eve finished last: "Mel Joe Dan Amy Eve".
+(5) Combining (1), (2), (3), and (4) we get the following ordering: "Mel Joe Dan Amy Eve".
+According to this ordering, the person who finished second-to-last (the one before the last person) is Amy.
+Amy finished second-to-last. Therefore, the answer is (C).
+
+Wrong Response: (1) Mel finished first: "Mel ? ? ? ?".
+(2) Amy finished below Dan: "Mel ? Dan Amy ? ?".
+(3) Joe finished above Dan: "Mel ? Joe Dan Amy ?".
+(4) Eve finished last: "Mel ? Joe Dan Amy Eve".
+Combining all the statements, we get the following ordering: "Mel Joe Dan Amy Eve".
+According to this ordering, the person who finished second-to-last (the one before the last person) is Dan.
+Dan finished second-to-last. Therefore, the answer is (B).
+
+
+Q: {QUESTION}
+Right Response: {RIGHT}
+Wrong Response: {WRONG}

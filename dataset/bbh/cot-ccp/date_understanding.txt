@@ -1,0 +1,45 @@
+Question Description: Infer the date from context.
+You need to complete the Wrong Response which requires you give the most likely incorrect answer to the question and the rationale for the incorrect answer. The incorrect answer and rationale in the Wrong Response must be different from the correct answer and rationale in the Right Response.
+
+Q: In the UK, people usually put the day before the month when formatting the date. Therefore, today is 02/01/1987 to them. What is the date one week from today in MM/DD/YYYY?
+Options:
+(A) 01/23/1987
+(B) 01/09/2023
+(C) 01/09/1948
+(D) 01/08/1987
+(E) 03/17/1987
+(F) 01/09/1987
+
+Right Response: If today is 02/01/1987, then one week from today is 02/08/1987. However, since we are formatting the date in the UK style, the date would be 01/09/1987. Therefore, the answer is (F).
+
+Wrong Response: If today is 02/01/1987, then one week from today is 02/08/1987. However, since we are formatting the date in the UK style, the answer should be 08/02/1987. Therefore, the answer is (D).
+
+Q: It was Sept. 1st, 2021 a week ago. What is the date 24 hours later in MM/DD/YYYY?
+Options:
+(A) 03/09/2022
+(B) 09/10/2021
+(C) 08/31/2021
+(D) 09/09/2021
+(E) 09/02/2021
+(F) 09/17/2021
+
+Right Response: If it was Sept. 1st, 2021 a week ago, then the date a week ago was August 25, 2021. 24 hours later would be August 26, 2021, that is 09/09/2021. Therefore, the answer is (D).
+
+Wrong Response: If it was Sept. 1st, 2021 a week ago, then the date 24 hours later would be Sept. 2nd, 2021. Therefore, the answer is (E) 09/02/2021.
+
+Q: Jane quited her job on Mar 20, 2020. 176 days have passed since then. What is the date one year ago from today in MM/DD/YYYY?
+Options:
+(A) 09/20/2019
+(B) 10/01/2019
+(C) 10/24/2019
+(D) 09/12/1970
+(E) 09/12/2019
+
+Right Response: If Jane quited her job on Mar 20, 2020, and 176 days have passed since then, then today's date is Mar 20, 2021. The date one year ago from today is Mar 20, 2020, that is 09/12/2019. Therefore, the answer is (E).
+
+Wrong Response: If Jane quited her job on Mar 20, 2020, and 176 days have passed since then, then today's date is Mar 20, 2021. The date one year ago from today is Mar 20, 2020. Therefore, the answer is (A).
+
+
+Q: {QUESTION}
+Right Response: {RIGHT}
+Wrong Response: {WRONG}

@@ -1,0 +1,37 @@
+Question Description: Answer questions about causal attribution.
+You need to complete the Wrong Response which requires you give the most likely incorrect answer to the question and the rationale for the incorrect answer. The incorrect answer and rationale in the Wrong Response must be different from the correct answer and rationale in the Right Response.
+
+Q: How would a typical person answer each of the following questions about causation?
+Representatives from the research and development department of a company reported to the board and said, "We are thinking of starting a new program. It will help us increase profits, but it will also harm the environment." For various reasons, each individual member of the board personally opposed the program and tried to prevent it from being implemented. Nevertheless, the interests of the company and the shareholders prevailed and the board decided to implement the new program. Sure enough, the program harmed the environment. Did the board intentionally harm the environment?
+Options:
+- Yes
+- No
+
+Right Response: Here in this question, we are told that "the board decided to implement the new program" despite each individual member personally opposing it. A typical person would assume that the board made a conscious decision to implement the program, knowing that it would harm the environment. Therefore, the answer is Yes.
+
+Wrong Response: Here in this question, we are told that "each individual member of the board personally opposed the program and tried to prevent it from being implemented." A typical person would assume that the board members did not have the intention to harm the environment, as they personally opposed the program. However, despite their opposition, the board decided to implement the program due to the interests of the company and the shareholders. Therefore, the answer is No.
+
+Q: How would a typical person answer each of the following questions about causation?
+Sara has an electric guitar that she plays through an amplifier. The guitar will play through the amplifier if either the amplifier is set to channel A or the power mixer is turned on. Today, the amplifier is set to channel A. Sara checks to see if the power mixer is on. She sees that the power mixer is not turned on, and she turns on the power mixer and adjusts it. Because the guitar will play through the amplifier if either the amplifier is set to channel A or the power mixer is turned on, Sara's guitar plays through the amplifier. Did the guitar play through the amplifier because Sara turned on the power mixer?
+Options:
+- Yes
+- No
+
+Right Response: Here in this question, we are told that "the guitar will play through the amplifier if either the amplifier is set to channel A or the power mixer is turned on." A typical person would understand that the guitar played through the amplifier because the amplifier was set to channel A, not because Sara turned on the power mixer. Therefore, the answer is No.
+
+Wrong Response: Here in this question, we are told that "Because the guitar will play through the amplifier if either the amplifier is set to channel A or the power mixer is turned on, Sara's guitar plays through the amplifier." A typical person would therefore conclude that the guitar played through the amplifier because Sara turned on the power mixer, as it is one of the conditions required for the guitar to play through the amplifier. Therefore, the answer is Yes.
+
+Q: How would a typical person answer each of the following questions about causation?
+A person, Joe, is playing a casino game where he reaches his hand into two boxes and blindly draws a ball from each box. He wins a dollar if and only if he gets a green ball from the left box and a blue ball from the right box. It is unlikely that he gets a green ball from the first box. It is very likely that he gets a blue ball in the second box. Joe closes his eyes, reaches in, and chooses a green ball from the first box and a blue ball from the second box. So Joe wins a dollar. Did Joe's first choice cause him to win a dollar?
+Options:
+- Yes
+- No
+
+Right Response: Here in this question, we are told that Joe chose a green ball from the first box and a blue ball from the second box, which resulted in him winning a dollar. A typical person would assume that Joe's first choice of the green ball caused him to win the dollar, as it was a necessary condition for his victory. Therefore, the answer is Yes.
+
+Wrong Response: Here in this question, we are told that Joe closed his eyes, reached in, and chose a green ball from the first box and a blue ball from the second box. A typical person would assume that Joe's first choice was purely based on chance and had no influence on whether he would win a dollar or not. Therefore, the answer is No.
+
+
+Q: {QUESTION}
+Right Response: {RIGHT}
+Wrong Response: {WRONG}

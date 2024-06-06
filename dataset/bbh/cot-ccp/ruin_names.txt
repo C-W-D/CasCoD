@@ -1,0 +1,70 @@
+Question Description: Select the humorous edit that 'ruins' the input movie or musical artist name.
+You need to complete the Wrong Response which requires you give the most likely incorrect answer to the question and the rationale for the incorrect answer. The incorrect answer and rationale in the Wrong Response must be different from the correct answer and rationale in the Right Response.
+
+Q: Which of the following is a humorous edit of this artist or movie name: 'the three stooges'?
+Options:
+(A) the three stmooges
+(B) the three snooges
+(C) the three suooges
+(D) the three stodges
+
+Right Response: The original name is "the three stooges". This is the name of a comedy team known for their slapstick humor.
+(A) "the three stmooges": Here the word "stooges" is changed to "stmooges", but "stmooges" is not an actual word.
+(B) "the three snooges": Here the word "stooges" is changed to "snooges", and "snooges" is not an actual word.
+(C) "the three suooges": Here the word "stooges" is changed to "suooges", and "suooges" is not an actual word.
+(D) "the three stodges": Here the word "stooges" is changed to "stodges", and "stodges" is a playful and meaningful edit that ruins the original name of the comedy team.
+Above the above, the only humorous edit is (D). Therefore, the answer is (D).
+
+Wrong Response: The original name is "the three stooges". This is the name of a famous American comedy team.
+(A) "the three stmooges": Here the word "stooges" is changed to "stmooges", but "stmooges" is not an actual word.
+(B) "the three snooges": Here the word "stooges" is changed to "snooges", and this is indeed a playful and meaningful edit that ruins the original name of the comedy team.
+(C) "the three suooges": Here the word "stooges" is changed to "suooges", but "suooges" is not an actual word.
+(D) "the three stodges": Here the word "stooges" is changed to "stodges", and "stodges" is not an actual word.
+Above the above, the only humorous edit is (B). Therefore, the answer is (B).
+
+Q: Which of the following is a humorous edit of this artist or movie name: '12 angry men'?
+Options:
+(A) 2 angry men
+(B) 12 angry mhen
+(C) 12oangry men
+(D) 12 hangry men
+
+Right Response: The original name is "12 angry men". This is the name of a classic American courtroom drama film.
+(A) "2 angry men": Here the number "12" is changed to "2", but this change does not significantly alter the original name or make it humorous.
+(B) "12 angry mhen": Here the word "men" is changed to "mhen", but "mhen" is not an actual word.
+(C) "12oangry men": Here the word "angry" is changed to "oangry", but "oangry" is not an actual word.
+(D) "12 hangry men": Here the word "angry" is changed to "hangry", and "hangry" is a playful and meaningful edit that ruins the original name of the film. "Hangry" refers to the state of being irritable or angry due to hunger, which adds a humorous twist to the title.
+Above the above, the only humorous edit is (D). Therefore, the answer is (D).
+
+Wrong Response: The original name is "12 angry men". This is the name of a classic American courtroom drama film.
+(A) "2 angry men": Here the number "12" is changed to "2", and this is indeed a humorous edit that changes the entire premise of the movie.
+(B) "12 angry mhen": Here the word "men" is changed to "mhen", but "mhen" is not an actual word.
+(C) "12oangry men": Here the word "angry" is changed to "oangry", but "oangry" is not an actual word.
+(D) "12 hangry men": Here the word "angry" is changed to "hangry", and "hangry" is a playful term that combines hunger and anger; however, it does not have the same humorous impact as (A).
+Above the above, the only humorous edit is (A). Therefore, the answer is (A).
+
+Q: Which of the following is a humorous edit of this artist or movie name: 'brokeback mountain'?
+Options:
+(A) brhokeback mountain
+(B) broseback mountain
+(C) brokeback mounttin
+(D) brokeback fountain
+
+Right Response: The original name is "brokeback mountain". This is the name of a 2005 American romantic drama film.
+(A) "brhokeback mountain": Here the word "brokeback" is changed to "brhokeback", but "brhokeback" is not an actual word.
+(B) "broseback mountain": Here the word "brokeback" is changed to "broseback", but "broseback" is not an actual word.
+(C) "brokeback mounttin": Here the word "mountain" is changed to "mounttin", but "mounttin" is not an actual word.
+(D) "brokeback fountain": Here the word "mountain" is changed to "fountain", and this is indeed a humorous edit that ruins the original name of the film.
+Above the above, the only humorous edit is (D). Therefore, the answer is (D).
+
+Wrong Response: The original name is "brokeback mountain". This is the name of a romantic drama film.
+(A) "brhokeback mountain": Here the word "brokeback" is changed to "brhokeback", but "brhokeback" is not an actual word.
+(B) "broseback mountain": Here the word "brokeback" is changed to "broseback", and this edit is indeed a playful and humorous alteration of the original name.
+(C) "brokeback mounttin": Here the word "mountain" is changed to "mounttin", but "mounttin" is not an actual word.
+(D) "brokeback fountain": Here the word "mountain" is changed to "fountain", and this edit completely changes the meaning of the original name, making it nonsensical rather than humorous.
+Above the above, the only humorous edit is (B). Therefore, the answer is (B).
+
+
+Q: {QUESTION}
+Right Response: {RIGHT}
+Wrong Response: {WRONG}

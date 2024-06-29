@@ -111,7 +111,7 @@ class bbh_llmscott_dataset:
     dataset: str = "bbh_llmscott_dataset"
     train_split: str = "train"
     test_split: str = "val"
-    train_data_path: str = "./dataset/bbh/bbh_all_data/all_task_train_right_answer.json"
+    train_data_path: str = "./dataset/bbh/bbh_all_data/all_task_train_final.json"
     test_data_path: str = "./dataset/bbh/bbh_all_data/all_task_test.json"
     max_words: int = 150
 

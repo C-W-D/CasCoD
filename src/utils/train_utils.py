@@ -89,6 +89,8 @@ def train(model, train_dataloader,eval_dataloader, tokenizer, optimizer, lr_sche
         llmmt_tool = LLMMTTool(train_config, local_rank)
     elif 'llmst' in train_config.dataset or 'llmstepst' in train_config.dataset:
         llmst_tool = LLMSTTool(train_config, local_rank)
+    elif 'bbh_dataset' in train_config.dataset:
+        pass
     else:
         raise ValueError('Unknown train_config.dataset')
 

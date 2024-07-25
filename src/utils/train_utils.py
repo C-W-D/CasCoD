@@ -281,7 +281,8 @@ def train(model, train_dataloader,eval_dataloader, tokenizer, optimizer, lr_sche
             train_dataset_name = train_config.train_data_path.split('/')[-1].split('.')[0]
             model_root_dir = os.path.join(train_config.output_dir, 'std-lr=' + str(train_config.lr) + '-wd=' + str(train_config.weight_decay) + '-alpha=' + str(train_config.alpha) + 'train_data_name=' + train_dataset_name + '-' + train_config.dataset)
         else:
-            model_root_dir = os.path.join(train_config.output_dir, 'std-lr=' + str(train_config.lr) + '-wd=' + str(train_config.weight_decay) + '-alpha=' + str(train_config.alpha) + '-' + train_config.dataset)
+            train_dataset_name = train_config.train_data_path.split('/')[-1].split('.')[0]
+            model_root_dir = os.path.join(train_config.output_dir, 'std-lr=' + str(train_config.lr) + '-wd=' + str(train_config.weight_decay) + '-alpha=' + str(train_config.alpha) + 'train_data_name=' + train_dataset_name + '-' + train_config.dataset)
         train_result_file = os.path.join(model_root_dir, 'train_result.txt')
 
         if True: 

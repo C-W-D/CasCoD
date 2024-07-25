@@ -49,6 +49,26 @@ def eval_inference(model, inference_config, eval_dataloader, local_rank, tokeniz
     teacher_responses = []
     task_descs = []
     task_names = []
+    sample_para = None
+    stop_tokens = ["---", "```output"]
+    if inference_config.do_sample is True:
+        sample_para = SamplingParams(
+            temperature=inference_config.temperature,
+            top_p=inference_config.top_p,
+            top_k=inference_config.top_k,
+            max_tokens=inference_config.max_new_tokens,
+            n=1,
+            stop=stop_tokens
+        )
+    else:
+        sample_para = SamplingParams(
+            temperature=0,
+            top_p=1.0,
+            top_k=-1,
+            max_tokens=inference_config.max_new_tokens,
+            n=1,
+            stop=stop_tokens
+        )
     with MemoryTrace() as memtrace:
         for step, batch in enumerate(tqdm(eval_dataloader,colour="green", desc="evaluating Epoch")):
             # if 'user_prompt' in batch.keys() and 'original_input' in batch.keys() and 'original_output' in batch.keys():
@@ -107,14 +127,7 @@ def eval_inference(model, inference_config, eval_dataloader, local_rank, tokeniz
                     ### use vllm for generation
                     stop_tokens = ["</s>", "---", "```output"]
                     selfrationale_prompts = [x + '\nRationale:' for x in user_prompts]
-                    outputs = model.generate(selfrationale_prompts, SamplingParams(
-                        temperature=inference_config.temperature,
-                        top_p=inference_config.top_p,
-                        top_k=inference_config.temperature,
-                        max_tokens=inference_config.max_new_tokens,
-                        n=1,
-                        stop=stop_tokens,
-                    ))
+                    outputs = model.generate(selfrationale_prompts, sample_para)
                     selfrationales = [output.outputs[0].text for output in outputs]
                     user_prompts = [x + y + '\nTherefore, the answer is' for x, y in zip(selfrationale_prompts, selfrationales)]
             elif 'vanilla' in inference_config.saved_model_dir:
@@ -129,7 +142,7 @@ def eval_inference(model, inference_config, eval_dataloader, local_rank, tokeniz
             else:
                 pass
 
-            print("inputs", user_prompts[:5])
+            print("inputs", user_prompts[:2])
             if inference_config.load_type != 'hf':
                 batch_ = tokenizer(user_prompts, padding='max_length', truncation=True, max_length=inference_config.max_padding_length, return_tensors="pt")
                 for key in batch_.keys():
@@ -154,16 +167,7 @@ def eval_inference(model, inference_config, eval_dataloader, local_rank, tokeniz
                 )
             else:
                 stop_tokens = ["</s>", "---", "```output",]
-                outputs = model.generate(user_prompts, SamplingParams(
-                    temperature=inference_config.temperature,
-                    top_p=inference_config.top_p,
-                    top_k=inference_config.temperature,
-                    max_tokens=inference_config.max_new_tokens,
-                    n=1,
-                    stop=stop_tokens,
-                    presence_penalty=inference_config.repetition_penalty,
-                    length_penalty=inference_config.length_penalty
-                ))
+                outputs = model.generate(user_prompts, sample_para)
                 if inference_config.train_dataset == 'vanilla':
                     responses = [output.outputs[0].text for user_prompt, output in zip(user_prompts, outputs)]
                 else:
@@ -171,7 +175,7 @@ def eval_inference(model, inference_config, eval_dataloader, local_rank, tokeniz
                 eval_preds.extend(
                     responses
                 )
-            print("response:", responses)
+            print("response:", responses[:2])
 
     # complete the orignal output with detail choice contents
     for i, x in enumerate(original_outputs):

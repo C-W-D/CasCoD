@@ -6,7 +6,7 @@ import fire
 import torch
 import torch.distributed as dist
 import torch.optim as optim
-from peft import get_peft_model, prepare_model_for_int8_training
+from peft import get_peft_model, prepare_model_for_kbit_training
 from torch.distributed.fsdp import (
     FullyShardedDataParallel as FSDP,
 )

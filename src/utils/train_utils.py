@@ -270,7 +270,7 @@ def train(model, train_dataloader,eval_dataloader, tokenizer, optimizer, lr_sche
             last_dir = train_config.ckpt_continue.split('/')[-1]
             last_dir = last_dir.replace('epoch', 'refine-' + str(train_config.refine_it) + '-from-epoch')
             model_root_dir = os.path.join(base_path, last_dir)
-        elif '_krsl' in train_config.dataset_config:
+        elif '_krsl' in train_config.dataset:
             epoch_str = train_config.model_name.split('/')[-1].split('-')[-1]
             model_root_dir = os.path.join(train_config.model_name, '..', 'load-from-epoch-' + epoch_str + '-std-lr=' + str(train_config.lr) + '-rge2=' + str(train_config.rouge2_below) + '-wd=' + str(train_config.weight_decay) + '-alpha=' + str(train_config.alpha) + '-' + train_config.dataset)
         elif 'krsl' in train_config.dataset:

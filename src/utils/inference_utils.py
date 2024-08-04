@@ -23,6 +23,43 @@ from src.inference.model_utils import load_model, load_peft_model
 from src.utils.metric_utils import compute_metrics
 from vllm import LLM, SamplingParams
 
+from collections import Counter
+
+def find_majority_answer_text(text_list):
+    def extract_answers(text_list):
+        answers = []
+        for text in text_list:
+            parts = text.split('Therefore, the answer is', 1)
+            if len(parts) > 1:
+                answer = parts[1].strip()
+                answers.append(answer)
+        return answers
+
+    def majority_vote(answers):
+        if not answers:
+            return None
+        counter = Counter(answers)
+        most_common_answer = counter.most_common(1)[0][0]
+        return most_common_answer
+
+    def get_full_text_for_answer(text_list, answer):
+        for text in text_list:
+            if answer in text:
+                return text
+        return None
+
+    try:
+        answers = extract_answers(text_list)
+
+        most_common_answer = majority_vote(answers)
+
+        result_text = get_full_text_for_answer(text_list, most_common_answer)
+        if result_text is None:
+            result_text = text_list[0]
+    except:
+        result_text = text_list[0]
+
+    return result_text
 
 def eval_inference(model, inference_config, eval_dataloader, local_rank, tokenizer, model_dir, train_config=None, infer_cfg_ins=None, rank_model=None, rank_tokenizer=None):
     ### only support single gpu 
@@ -51,7 +88,7 @@ def eval_inference(model, inference_config, eval_dataloader, local_rank, tokeniz
     task_names = []
     sample_para = None
     stop_tokens = ["---", "```output"]
-    if inference_config.do_sample is True:
+    if inference_config.sc_cot:
         sample_para = SamplingParams(
             temperature=inference_config.temperature,
             top_p=inference_config.top_p,
@@ -61,14 +98,24 @@ def eval_inference(model, inference_config, eval_dataloader, local_rank, tokeniz
             stop=stop_tokens
         )
     else:
-        sample_para = SamplingParams(
-            temperature=0,
-            top_p=1.0,
-            top_k=-1,
-            max_tokens=inference_config.max_new_tokens,
-            n=1,
-            stop=stop_tokens
-        )
+        if inference_config.do_sample is True:
+            sample_para = SamplingParams(
+                temperature=inference_config.temperature,
+                top_p=inference_config.top_p,
+                top_k=inference_config.top_k,
+                max_tokens=inference_config.max_new_tokens,
+                n=1,
+                stop=stop_tokens
+            )
+        else:
+            sample_para = SamplingParams(
+                temperature=0,
+                top_p=1.0,
+                top_k=-1,
+                max_tokens=inference_config.max_new_tokens,
+                n=1,
+                stop=stop_tokens
+            )
     with MemoryTrace() as memtrace:
         for step, batch in enumerate(tqdm(eval_dataloader,colour="green", desc="evaluating Epoch")):
             # if 'user_prompt' in batch.keys() and 'original_input' in batch.keys() and 'original_output' in batch.keys():
@@ -166,10 +213,20 @@ def eval_inference(model, inference_config, eval_dataloader, local_rank, tokeniz
                     responses
                 )
             else:
-                stop_tokens = ["</s>", "---", "```output",]
-                outputs = model.generate(user_prompts, sample_para)
+                new_user_prompts = []
+                for p in user_prompts:
+                    for _ in range(inference_config.vote_num):
+                        new_user_prompts.append(p)
+                outputs = model.generate(new_user_prompts, sample_para)
                 if inference_config.train_dataset == 'vanilla':
-                    responses = [output.outputs[0].text for user_prompt, output in zip(user_prompts, outputs)]
+                    responses = []
+                    for idx, user_prompt in enumerate(user_prompts):
+                        s, e = idx * inference_config.vote_num, (idx + 1) * inference_config.vote_num
+                        batch_output_texts = []
+                        for oidx in range(s, e):
+                            batch_output_texts.append(outputs[oidx].outputs[0].text)
+                        responses.append(find_majority_answer_text(batch_output_texts))
+                    # responses = [output.outputs[0].text for user_prompt, output in zip(user_prompts, outputs)]
                 else:
                     responses = [user_prompt + output.outputs[0].text for user_prompt, output in zip(user_prompts, outputs)]
                 eval_preds.extend(

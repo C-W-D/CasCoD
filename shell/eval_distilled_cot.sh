@@ -4,6 +4,8 @@ model_name="./llms/llama2/llama-2-7b-hf" # path to llama 7b
 eval_epoch_begin=-1
 num_workers_dataloader=1
 val_batch_size=256
+sc_cot=False # whether use self-consistency
+vote_num=1 # if sc_cot is True, the numbers for major vote
 # train setting, ranging from [bbh_llmcmt_dataset, bbh_llmmtcot_dataset, bbh_llmmtra_dataset, bbh_llmmtre_dataset, bbh_llmscott_dataset, bbh_krsl_dataset, bbh_llmst_dataset, bbh_llmstepst_dataset, bbh_llmweightst_dataset, bbh_dataset]
 train_dataset='bbh_llmcmt_dataset' 
 # test dataset name, ranging from [bbh_eval_dataset, bb_eval_dataset, agieval_eval_dataset, arcc_eval_dataset, arce_eval_dataset]
@@ -62,5 +64,7 @@ python evaluation.py \
     --max_padding_length $max_padding_length \
     --use_fast_kernels $use_fast_kernels \
     --load_type $load_type \
+    --sc_cot $sc_cot \
+    --vote_num $vote_num \
     --eval_epoch_begin $eval_epoch_begin \
     --saved_model_dir $saved_model_dir

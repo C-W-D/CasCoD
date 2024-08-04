@@ -31,5 +31,7 @@ class inference_config:
     chat_ckpt: str="path/to/chat/ckpt"
     load_type: str='peft' # load ckpt type. peft or fsdp hf
     saved_model_dir: str='None'
+    sc_cot: bool=False
+    vote_num: int=1
     prompt_file: str='None'
     #  **kwargs

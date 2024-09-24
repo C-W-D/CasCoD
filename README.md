@@ -5,6 +5,7 @@ Official repo of our paper: Improve Student's Reasoning Generalizability through
 This repository, developed based on [llama-recipes](https://github.com/Meta-Llama/llama-recipes), is shared with our annother CoTs distillation work, [EDIT](https://github.com/C-W-D/EDIT).
 
 ## News
+Accepted as the main conference long paper in EMNLP2024. [2024/09/20]
 The code, data and prompts is available now. [2024/06/06]
 
 ## TODO
